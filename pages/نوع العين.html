@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="pixelstrap">
+  <link rel="shortcut icon" href="../assets/images/logo-sm.png" type="image/x-icon">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatable-extension.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/select2.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
+</head>
+
+<body>
+  <!-- Loader starts-->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  <div class="tap-top"><i class="fa fa-chevron-up"></i></div>
+
+  <div class="page-wrapper compact-wrapper" id="pageWrapper">
+    <!-- Page Header Start-->
+    <div class="page-header">
+      <div class="header-wrapper row m-0">
+        <div class="header-logo-wrapper col-auto p-0">
+          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
+                src="../assets/images/logo.png" alt=""></a>
+          </div>
+          <div class="toggle-sidebar">
+            <div class="status_toggle sidebar-toggle d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="nav-right col-10 col-sm-6 pull-right right-header p-0">
+          <ul class="nav-menus">
+
+            <li class="onhover-dropdown">
+              <div class="notification-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="bell"
+                  data-lucide="bell" class="">
+                  <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 01-3.46 0"></path>
+                </svg>
+                <span class="badge rounded-pill badge-warning">4 </span>
+              </div>
+              <div class="onhover-show-div notification-dropdown">
+                <div class="dropdown-title">
+                  <h3>الاشعارات</h3>
+                </div>
+                <ul class="custom-scrollbar">
+                  <li>
+                    <div class="media">
+                      <div class="notification-img"><img src="../assets/images/user.svg" alt="">
+                      </div>
+                      <div class="media-body">
+                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <p>قام بتسجيل الدخول</p><span>10:20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <div class="notification-img"><img src="../assets/images/user.svg" alt="">
+                      </div>
+                      <div class="media-body">
+                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <p>قام بتسجيل الدخول</p><span>10:20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <div class="notification-img"><img src="../assets/images/user.svg" alt="">
+                      </div>
+                      <div class="media-body">
+                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <p>قام بتسجيل الدخول</p><span>10:20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <div class="notification-img"><img src="../assets/images/user.svg" alt="">
+                      </div>
+                      <div class="media-body">
+                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <p>قام بتسجيل الدخول</p><span>10:20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <div class="notification-img"><img src="../assets/images/user.svg" alt="">
+                      </div>
+                      <div class="media-body">
+                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <p>قام بتسجيل الدخول</p><span>10:20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-0"><a class="view-all" href="#">عرض الكل</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="maximize"><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <g>
+                      <path d="M2.99609 8.71995C3.56609 5.23995 5.28609 3.51995 8.76609 2.94995" stroke="#130F26"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M8.76616 20.99C5.28616 20.41 3.56616 18.7 2.99616 15.22L2.99516 15.224C2.87416 14.504 2.80516 13.694 2.78516 12.804"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M21.2446 12.804C21.2246 13.694 21.1546 14.504 21.0346 15.224L21.0366 15.22C20.4656 18.7 18.7456 20.41 15.2656 20.99"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M15.2661 2.94995C18.7461 3.51995 20.4661 5.23995 21.0361 8.71995" stroke="#130F26"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg></a></li>
+            <li class="profile-nav onhover-dropdown">
+              <div class="media profile-media">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.55851 21.4562C5.88651 21.4562 2.74951 20.9012 2.74951 18.6772C2.74951 16.4532 5.86651 14.4492 9.55851 14.4492C13.2305 14.4492 16.3665 16.4342 16.3665 18.6572C16.3665 20.8802 13.2505 21.4562 9.55851 21.4562Z"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.55849 11.2776C11.9685 11.2776 13.9225 9.32356 13.9225 6.91356C13.9225 4.50356 11.9685 2.54956 9.55849 2.54956C7.14849 2.54956 5.19449 4.50356 5.19449 6.91356C5.18549 9.31556 7.12649 11.2696 9.52749 11.2776H9.55849Z"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M16.8013 10.0789C18.2043 9.70388 19.2383 8.42488 19.2383 6.90288C19.2393 5.31488 18.1123 3.98888 16.6143 3.68188"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M17.4608 13.6536C19.4488 13.6536 21.1468 15.0016 21.1468 16.2046C21.1468 16.9136 20.5618 17.6416 19.6718 17.8506"
+                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <ul class="profile-dropdown onhover-show-div">
+                <li><a href="profile.html"><i class="fa fa-user"></i><span>الملف الشخصي</span></a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"> </i><span>تسجيل خروج</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Page Body Start-->
+    <div class="page-body-wrapper">
+      <div class="sidebar-wrapper">
+        <nav class="sidebar-main">
+          <div class="left-arrow" id="left-arrow"><i class="fa fa-arrow-left"></i></div>
+          <div id="sidebar-menu">
+            <ul class="sidebar-links">
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="index.html">
+                  <img src="../assets/images/icons/home.svg" alt="">
+                  <span>الرئيسية</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
+                  <img src="../assets/images/icons/user.svg" alt="">
+                  <span>الصلاحيات والأدوار</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="الأعين.html">
+                  <img src="../assets/images/icons/gavel.svg" alt="">
+                  <span>إدارة الأعين</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
+                  <img src="../assets/images/icons/auction.svg" alt="">
+                  <span>إدارة المزادات</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
+                  <img src="../assets/images/icons/auctioneer.svg" alt="">
+                  <span>إدارة المزايدين</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المستخدمين.html">
+                  <img src="../assets/images/icons/employees.svg" alt="">
+                  <span>إدارة المستخدمين</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                <img src="../assets/images/icons/services.svg" alt="">
+                <span>إعدادات النظام</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="نوع العين.html">نوع العين</a></li>
+                <li><a href="خصائص العين.html">خصائص العين</a></li>
+                <li><a href="نوع المزاد.html">نوع المزاد</a></li>
+                <li><a href="المدينة.html">المدينة</a></li>
+                <li><a href="المنطقة.html">المنطقة</a></li>
+                <li><a href="الجهة.html">الجهة</a></li>
+              </ul>
+            </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                  <img src="../assets/images/icons/cog.svg" alt="">
+                  <span>الإعدادات</span></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="الاعدادات العامة.html">الاعدادات العامة</a></li>
+                  <li><a href="الاسئلة الشائعة.html">الاسئلة الشائعة</a></li>
+                  <li><a href="عن الشركة.html">عن الشركة</a></li>
+                  <li><a href="طلبات التواصل.html">طلبات التواصل</a></li>
+                  <li><a href="الاسليدر.html">الاسليدر</a></li>
+                  <li><a href="الخدمات.html">الخدمات</a></li>
+                  <li><a href="المقالات.html">الأخبار والمقالات</a></li>
+                  <li><a href="الشروط والاحكام.html">الشروط والاحكام</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
+                  <img src="../assets/images/icons/ringing.svg" alt="">
+                  <span>الإشعارات</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
+                  <img src="../assets/images/icons/chat.svg" alt="">
+                  <span>الدردشة</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-arrow" id="right-arrow"><i class="fa fa-arrow-left"></i></div>
+        </nav>
+      </div>
+      <!-- Page Sidebar Ends-->
+      <div class="page-body">
+        <!-- Container-fluid starts-->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>نوع العين</h3>
+                    <div class="btns-header">
+                        <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
+                            <i class="fa fa-trash"></i>
+                            حذف الكل
+                        </a>
+                        <a href="javascript:;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" class="btn btn-primary btn-air-primary btn-icon">
+                            <i class="fa fa-plus"></i>
+                            اضافة نوع
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered datatable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="inline-1" type="checkbox">
+                                            <label for="inline-1">تحديد الكل</label>
+                                        </div>
+                                    </th>
+                                    <th>نوع العين</th>
+                                    <th>التحكم</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox checkbox-primary custom-check">
+                                            <input id="inline-2" type="checkbox">
+                                            <label for="inline-2"></label>
+                                        </div>
+                                    </td>
+                                    <td>عقار</td>
+                                    <td>
+                                        <div class="btns-table">
+                                            <a href="#" class="btn btn-success">
+                                                <i class="fa fa-edit"></i>
+                                                تعديل
+                                            </a>
+                                            <a href="#" class="btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                                حذف
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container-fluid Ends-->
+
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0">جميع الحقوق محفوظة © 2022 لدى شركة Codlop</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-custom" id="exampleModal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">اضافة نوع العين</h5>
+        </div>
+        <div class="modal-body pb-0">
+          <form class="form" method="post" action="">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label class="form-label">اسم النوع</label>
+                <input class="form-control" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="modal-footer mt-2">
+              <button class="btn btn-primary btn-air-primary btn-icon" type="button" data-bs-dismiss="modal">
+                <i class="fa fa-save"></i>
+                حفظ
+              </button>
+              <button class="btn btn-danger exsit_modal btn-air-danger btn-icon" type="button" data-bs-dismiss="modal">
+                <i class="fa fa-times"></i>
+                خروج
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- latest jquery-->
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/scrollbar/simplebar.js"></script>
+  <script src="../assets/js/scrollbar/custom.js"></script>
+  <script src="../assets/js/counter/jquery.waypoints.min.js"></script>
+  <script src="../assets/js/counter/jquery.counterup.min.js"></script>
+  <script src="../assets/js/sidebar-menu.js"></script>
+  <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
+  <script src="../assets/js/notify/index.js"></script>
+  <script src="../assets/js/echarts.js"></script>
+  <script src="../assets/js/datatable/datatables/jquery.datatables.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/jszip.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
+  <script src="../assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
+  <script src="../assets/js/select2/select2.full.min.js"></script>
+  <script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
+  <script src="../assets/js/moment.js"></script>
+  <script src="../assets/js/moment-hijri.min.js"></script>
+  <script src="../assets/js/bootstrap-hijri-datetimepicker.js"></script>
+  <script src="../assets/js/filepond/filepond.min.js"></script>
+  <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
+  <script src="../assets/js/filepond/filepond.jquery.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
