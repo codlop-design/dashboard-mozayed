@@ -418,7 +418,10 @@ $(".color-selector ul li ").on("click", function (e) {
   $(document).ready(function () {
     var table = $('.table.datatable').DataTable({
         lengthChange: true,
-        buttons: [ 'excel', 'pdf', 'print']
+        buttons: [ 'excel', 'pdf', 'print'],
+        language: {
+          "url": "http://cdn.datatables.net/plug-ins/1.12.1/i18n/ar.json"
+      }
     });
     table.buttons().container()
         .appendTo('#DataTables_Table_0_wrapper .col-md-6:eq(0)');
@@ -463,3 +466,13 @@ $(".hijri-date-input").hijriDatePicker({
     // Turn input element into a pond
     $('.my-pond').filepond();
     });
+
+    
+
+    $('.search-filter').click(function(){
+      $('.filter').slideToggle();
+      $(this).toggleClass('show')
+    });
+
+
+

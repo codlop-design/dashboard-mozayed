@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap-datetimepicker.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -177,7 +178,7 @@
                   <img src="../assets/images/icons/home.svg" alt="">
                   <span>الرئيسية</span></a>
               </li>
-              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="الصلاحيات والادوار.html">
                   <img src="../assets/images/icons/user.svg" alt="">
                   <span>الصلاحيات والأدوار</span></a>
               </li>
@@ -198,38 +199,44 @@
                   <span>إدارة المستخدمين</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
-                <img src="../assets/images/icons/services.svg" alt="">
-                <span>إعدادات النظام</span></a>
-              <ul class="sidebar-submenu">
-                <li><a href="نوع العين.html">نوع العين</a></li>
-                <li><a href="خصائص العين.html">خصائص العين</a></li>
-                <li><a href="نوع المزاد.html">نوع المزاد</a></li>
-                <li><a href="المدينة.html">المدينة</a></li>
-                <li><a href="المنطقة.html">المنطقة</a></li>
-                <li><a href="الجهة.html">الجهة</a></li>
-              </ul>
-            </li>
+                  <img src="../assets/images/icons/services.svg" alt="">
+                  <span>إعدادات النظام</span></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="نوع العين.html">نوع العين</a></li>
+                  <li><a href="خصائص العين.html">خصائص العين</a></li>
+                  <li><a href="نوع المزاد.html">نوع المزاد</a></li>
+                  <li><a href="المدينة.html">المدينة</a></li>
+                  <li><a href="المنطقة.html">المنطقة</a></li>
+                  <li><a href="الجهة.html">الجهة</a></li>
+                </ul>
+              </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
                   <img src="../assets/images/icons/cog.svg" alt="">
                   <span>الإعدادات</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="الاعدادات العامة.html">الاعدادات العامة</a></li>
-                  <li><a href="الاسئلة الشائعة.html">الاسئلة الشائعة</a></li>
+                  <li><a href="#">الملف الشخصي</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                  <img src="../assets/images/icons/web-content.svg" alt="">
+                  <span>صفحات الموقع</span></a>
+                <ul class="sidebar-submenu">
                   <li><a href="عن الشركة.html">عن الشركة</a></li>
-                  <li><a href="طلبات التواصل.html">طلبات التواصل</a></li>
                   <li><a href="الاسليدر.html">الاسليدر</a></li>
                   <li><a href="الخدمات.html">الخدمات</a></li>
                   <li><a href="المقالات.html">الأخبار والمقالات</a></li>
+                  <li><a href="الاسئلة الشائعة.html">الاسئلة الشائعة</a></li>
                   <li><a href="الشروط والاحكام.html">الشروط والاحكام</a></li>
                 </ul>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="طلبات التواصل.html">
+                  <img src="../assets/images/icons/mail.svg" alt="">
+                  <span>طلبات التواصل</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
                   <img src="../assets/images/icons/ringing.svg" alt="">
                   <span>الإشعارات</span></a>
-              </li>
-              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
-                  <img src="../assets/images/icons/chat.svg" alt="">
-                  <span>الدردشة</span></a>
               </li>
             </ul>
           </div>
@@ -240,128 +247,161 @@
       <div class="page-body">
         <!-- Container-fluid starts-->
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-header">
-                    <h3>إدارة المزايدين</h3>
-                    <div class="btns-header">
-                        <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
-                            <i class="fa fa-trash"></i>
-                            حذف الكل
-                        </a>
-                        <a href="اضافة مزايد.html" class="btn btn-primary btn-air-primary btn-icon">
-                            <i class="fa fa-plus"></i>
-                            اضافة مزايد
-                        </a>
-                    </div>
-                </div>
-                <div class="card-body pb-0">
-                  <form class="row form" method="post" action="">
-                      <div class="col-md-3 form-group">
-                          <label class="form-label">الإسم</label>
-                          <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-3 form-group">
-                        <label class="form-label">رقم الجوال</label>
-                        <input class="form-control" type="number" placeholder="">
-                    </div>
-                    <div class="col-md-3 form-group">
-                        <label class="form-label">البريد الإلكتروني</label>
-                        <input class="form-control" type="email" placeholder="">
-                    </div>
-                      <div class="col-md-3 form-group">
-                          <label class="form-label">النوع</label>
-                          <select id="" class="select2-custom">
-                              <option value="">ذكر</option>
-                              <option value="">انثي</option>
-                          </select>
-                      </div>
-                      <div class="card-footer mt-2">
-                          <button class="btn btn-primary btn-air-primary btn-icon" type="submit">
-                              <i class="fa fa-search"></i>
-                              بحث
-                          </button>
-                      </div>
-                  </form>
+          <div class="card">
+            <div class="card-header">
+              <h3>إدارة المزايدين</h3>
+              <div class="btns-header">
+                <a href="javascript:;" class="search-filter">
+                  <span class="show-search">
+                    <i class="fa fa-long-arrow-down"></i>
+                    اظهار البحث</span>
+                  <span class="hide-search">
+                    <i class="fa fa-long-arrow-up"></i>
+                    اخفاء البحث</span>
+                </a>
+                <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
+                  <i class="fa fa-trash"></i>
+                  حذف الكل
+                </a>
+                <a href="اضافة مزايد.html" class="btn btn-primary btn-air-primary btn-icon">
+                  <i class="fa fa-plus"></i>
+                  اضافة مزايد
+                </a>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered datatable">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div class="checkbox checkbox-primary">
-                                        <input id="inline-1" type="checkbox">
-                                        <label for="inline-1">تحديد الكل</label>
-                                    </div>
-                                </th>
-                                <th>الإسم</th>
-                                <th>رقم الجوال</th>
-                                <th>البريد الإلكتروني</th>
-                                <th>النوع</th>
-                                <th>مفعل / غير مفعل</th>
-                                <th>التحكم</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="checkbox checkbox-primary custom-check">
-                                        <input id="inline-2" type="checkbox">
-                                        <label for="inline-2"></label>
-                                    </div>
-                                </td>
-                                <td>Company</td>
-                                <td>01255454</td>
-                                <td>info@gmail.com</td>
-                                <td>ذكر</td>
-                                <td>
-                                    <div class="media">
-                                        <div class="icon-state">
-                                            <label class="switch">
-                                                <input name="" value="active" class="" type="checkbox">
-                                                <span class="switch-state"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="btns-table">
-                                        <a href="#" class="btn btn-info">
-                                            <i class="fa fa-eye"></i>
-                                            عرض تفاصيل المزايد
-                                        </a>
-                                        <a href="#" class="btn btn-success">
-                                            <i class="fa fa-edit"></i>
-                                            تعديل
-                                        </a>
-                                        <a href="#" class="btn btn-danger">
-                                            <i class="fa fa-trash"></i>
-                                            حذف
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="card-body pb-0 filter">
+              <form class="form" method="post" action="">
+                <div class="row">
+                  <div class="col-md-3 form-group">
+                    <label class="form-label">الإسم</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label class="form-label">رقم الجوال</label>
+                    <input class="form-control" type="number" placeholder="">
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input class="form-control" type="email" placeholder="">
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label class="form-label">النوع</label>
+                    <select id="" class="select2-custom">
+                      <option value="">ذكر</option>
+                      <option value="">انثي</option>
+                    </select>
+                  </div>
                 </div>
+                <div class="card-footer mt-2">
+                  <button class="btn btn-primary btn-air-primary btn-icon" type="submit">
+                    <i class="fa fa-search"></i>
+                    بحث
+                  </button>
+                </div>
+              </form>
+              <div class="line-body"></div>
             </div>
-            </div>
-        </div>
-        <!-- Container-fluid Ends-->
-
-        <!-- footer start-->
-        <footer class="footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12 footer-copyright text-center">
-                <p class="mb-0">جميع الحقوق محفوظة © 2022 لدى شركة Codlop</p>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered datatable">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="checkbox checkbox-primary">
+                          <input id="inline-1" type="checkbox">
+                          <label for="inline-1">تحديد الكل</label>
+                        </div>
+                      </th>
+                      <th>الإسم</th>
+                      <th>رقم الجوال</th>
+                      <th>البريد الإلكتروني</th>
+                      <th>النوع</th>
+                      <th>مفعل / غير مفعل</th>
+                      <th></th>
+                      <th>التحكم</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="checkbox checkbox-primary custom-check">
+                          <input id="inline-2" type="checkbox">
+                          <label for="inline-2"></label>
+                        </div>
+                      </td>
+                      <td>Company</td>
+                      <td>01255454</td>
+                      <td>info@gmail.com</td>
+                      <td>ذكر</td>
+                      <td>
+                        <div class="media">
+                          <div class="icon-state">
+                            <label class="switch">
+                              <input name="" value="active" class="" type="checkbox">
+                              <span class="switch-state"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btns-table">
+                          <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#details-modal">
+                            <i class="fa fa-eye"></i>
+                            عرض تفاصيل المزايد
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btns-table">
+                          <a href="#" class="btn btn-success">
+                            <i class="fa fa-edit"></i>
+                            تعديل
+                          </a>
+                          <a href="#" class="btn btn-danger">
+                            <i class="fa fa-trash"></i>
+                            حذف
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
+        <!-- Container-fluid Ends-->
       </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 footer-copyright text-center">
+              <p class="mb-0">جميع الحقوق محفوظة © 2022 لدى شركة Codlop</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="modal fade modal-custom modal-user" id="details-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="card custom-card">
+          <div class="card-header"><img class="img-fluid" src="../assets/images/bg.jpg" alt=""></div>
+          <div class="card-profile"><img class="rounded-circle" src="../assets/images/user.svg" alt=""></div>
+          <div class="profile-details">
+            <h4>عبدالرحمن محمد علي</h4>
+            <h6>+966 15 075 3569</h6>
+            <ul>
+              <li><p><i class="fa fa-address-card-o"></i>رقم الهوية</p><span>23542358421</span></li>
+              <li><p><i class="fa fa-calendar"></i>تاريخ الميلاد</p><span>18/02/1995</span></li>
+              <li><p><i class="fa fa-venus-mars"></i>النوع</p> <span>ذكر</span></li>
+              <li><p><i class="fa fa-user-o"></i>اسم المستخدم</p><span>hantash</span></li>
+              <li><p><i class="fa fa-key"></i>كلمة المرور</p><span class="">123456789</span></li>
+            </ul>
+          </div>
+        </div>
     </div>
   </div>
 
