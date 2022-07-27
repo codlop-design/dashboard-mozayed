@@ -410,11 +410,6 @@ $(".color-selector ul li ").on("click", function (e) {
   $(this).addClass("active");
 });
 
-  $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-  });
-
   $(document).ready(function () {
     var table = $('.table.datatable').DataTable({
         lengthChange: true,
@@ -475,4 +470,20 @@ $(".hijri-date-input").hijriDatePicker({
     });
 
 
+    $('#demo').steps({
+      onFinish: function () {
+          alert('complete');
+      }
+  });
 
+$(document).ready(function(){
+  const myCountdown = new countdown({
+    target: '.countdown-div',
+    dayWord: ' يوم',
+    hourWord: ' ساعة',
+    minWord: ' دقيقة',
+    secWord: ' ثانية'
+});
+})
+
+$('.tagsinput').tagsInput();

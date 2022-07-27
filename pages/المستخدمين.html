@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -186,10 +187,16 @@
                   <img src="../assets/images/icons/gavel.svg" alt="">
                   <span>إدارة الأعين</span></a>
               </li>
-              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
-                  <img src="../assets/images/icons/auction.svg" alt="">
-                  <span>إدارة المزادات</span></a>
-              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                <img src="../assets/images/icons/auction.svg" alt="">
+                <span>إدارة المزادات</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
+                <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
+                <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
+                <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+              </ul>
+            </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
                   <img src="../assets/images/icons/auctioneer.svg" alt="">
                   <span>إدارة المزايدين</span></a>
@@ -355,7 +362,7 @@
                       </td>
                       <td>
                         <div class="btns-table">
-                          <a href="#" class="btn btn-success">
+                          <a href="اضافة مستخدم.html" class="btn btn-success">
                             <i class="fa fa-edit"></i>
                             تعديل
                           </a>
@@ -413,8 +420,7 @@
   <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/scrollbar/simplebar.js"></script>
   <script src="../assets/js/scrollbar/custom.js"></script>
-  <script src="../assets/js/counter/jquery.waypoints.min.js"></script>
-  <script src="../assets/js/counter/jquery.counterup.min.js"></script>
+  <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/sidebar-menu.js"></script>
   <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
   <script src="../assets/js/notify/index.js"></script>
@@ -437,6 +443,7 @@
   <script src="../assets/js/filepond/filepond.min.js"></script>
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
+  <script src="../assets/js/steps/jquery-steps.min.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 

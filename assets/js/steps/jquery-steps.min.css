@@ -1,0 +1,137 @@
+
+.step-app .step-steps {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.step-app .step-steps li {
+    list-style: none;
+    flex: 1;
+    cursor: pointer;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-app .step-steps li::after,.step-app .step-steps li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    width: 50%;
+    height: 5px;
+    background-color: #e2e8f3;
+    border-top: 1px solid #e2e8f3;
+    border-bottom: 1px solid #e2e8f3;
+}
+
+.step-app .step-steps li::before {
+    right: 0;
+}
+
+.step-app .step-steps li:first-child::before,.step-app .step-steps li:last-child::after{
+display: none;
+}
+
+
+.step-app .step-steps li span {width: 35px;height: 35px;display: flex;justify-content: center;align-items: center;border-radius: 50%;font-size: 25px;margin: 0 auto;background: #e2e8f3;position: relative;z-index: 1;padding-top: 2px;box-shadow: 0 0 0 2px #fff, 0 0 0 3px #e2e8f3;}
+
+.step-app .step-steps li p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.step-app .step-steps li:last-child a {
+    border: none
+}
+
+.step-app .step-steps li.active span {
+    background-color: #216883;
+    color: #fff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #216883;
+}
+
+.step-app .step-steps li.active::after,.step-app .step-steps li.active::before {
+    background-color: #216883;
+    border-top: 1px solid #216883;
+    border-bottom: 1px solid #216883;
+}
+
+.step-app .step-steps li.error::after,.step-app .step-steps li.error::before {
+    background-color: #e7505a;
+    border-top: 1px solid #e7505a;
+    border-bottom: 1px solid #e7505a;
+}
+
+.step-app .step-steps li.done::after,.step-app .step-steps li.done::before {
+    background-color: #4caf50;
+    border-top: 1px solid #4caf50;
+    border-bottom: 1px solid #4caf50;
+}
+
+.step-app .step-steps li.error span{
+    background-color: #e7505a;
+    color: #fff
+}
+
+.step-app .step-steps li.done span{
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #4caf50;
+}
+
+.step-app .step-steps li .number {
+    background: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 3px;
+    color: #333
+}
+
+.step-app .step-content {padding: 20px;padding-bottom: 10px;margin-top: 25px;border: 2px solid #d6deeb;border-radius: 15px;}
+
+.step-app .step-content .step-tab-panel {
+    display: none
+}
+
+.step-app .step-content .step-tab-panel.active {
+    display: block
+}
+
+.step-app .step-footer {
+    margin-top: 20px;
+}
+
+.step-app .step-footer .step-btn {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background: #216883;
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 18px;
+    width: 150px;
+    border: 2px solid #216883;
+}
+
+.step-app .step-footer .step-btn.btn-next {float: left;}
+
+.step-app .step-footer .step-btn.btn-prev {
+    background: #fff;
+    color: #216883;
+    border: 2px solid;
+}
+
+.step-app .step-footer .step-btn.btn-finish {
+    float: left;
+}

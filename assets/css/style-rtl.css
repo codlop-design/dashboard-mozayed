@@ -11451,7 +11451,7 @@ table.dataTable.display tbody tr.odd>.sorting_1 {
 }
 
 .theme-form .form-group {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .theme-form label {
@@ -12139,8 +12139,9 @@ form.basic-html-input-control-form input[type="time"]::after {
     width: 1.3rem;
     height: 1.3rem;
     background: #fff;
-    border: 2px solid #d9e5f1;
-    cursor: pointer
+    border: 2px solid #c6d0db;
+    cursor: pointer;
+    border-radius: 2px;
 }
 
 .checkbox_animated:checked:before {
@@ -27567,7 +27568,6 @@ ul.pro-services li:nth-child(n+2) {
 
 .login-card {
     background-color: rgba(99, 98, 231, 0.1);
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27587,14 +27587,9 @@ ul.pro-services li:nth-child(n+2) {
 .login-form {
     padding: 30px;
     width: 450px;
-    background-color: #fff;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 0 0 0 4px #e0e5f5;
-    border-radius: 10px;
+    background-color: #ffffffdb;
+    /* box-shadow: 0 0 0 4px #e0e5f5; */
+    border-radius: 20px;
 }
 
 .login-form h4 {
@@ -27629,7 +27624,11 @@ ul.pro-services li:nth-child(n+2) {
     position: relative
 }
 
-.login-form .form-group label {text-transform: capitalize;margin-bottom: 1px;font-size: 17px;}
+.login-form .form-group label {
+    text-transform: capitalize;
+    margin-bottom: 1px;
+    font-size: 17px;
+}
 
 .login-form .form-group .input-group-text {
     background-color: rgba(99, 98, 231, 0.1);
@@ -49463,25 +49462,29 @@ ul {
 }
 
 .check-list .animate-chk {
-    border: 2px solid #d9e5f1;
+    border: 2px solid #416e8033;
     padding: 10px;
     border-radius: 10px;
     padding-top: 0;
     overflow: hidden;
+    box-shadow: rgb(33 35 38 / 6%) 0px 10px 10px -10px;
 }
 
 .header-check {
-
-    border-bottom: 2px solid #d9e5f1;
+    padding: 0 15px;
     padding-bottom: 0.5rem;
     padding-top: 10px;
-    background: #ecf3fa;
+    background: #568ea424;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 4px 10px 4px;
+    width: -webkit-fill-available;
+    border-radius: 5px 5px 0 0;
 }
 
 .header-check span {
-    font-weight: bold;
-    margin-right: 5px;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .check-list {
@@ -56422,8 +56425,8 @@ table img {
     background-size: cover;
     position: relative;
     z-index: 1;
-    overflow: hidden;
     background-image: url(../images/giant-building-with-sun.jpg);
+    overflow: hidden;
 }
 
 .star-animation {
@@ -56442,7 +56445,108 @@ table img {
 }
 
 .login-form img {
-height: 100px; 
-margin: 0 auto;  
-display: block;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.message-details {
+padding: 20px;
+}
+
+.message-details .media {
+gap: 25px;
+align-items: center;
+margin-bottom: 20px;
+border-bottom: 1px solid #dee2e6;
+padding-bottom: 20px;
+}
+
+.message-details .media img{
+width: 100px;
+height: 100px;
+border: 2px solid #dee2e6;
+padding: 2px;
+border-radius: 50%;
+}
+
+.message-details .media h6{
+font-weight: bold;
+font-size: 17px;
+margin-bottom: 5px;
+}
+
+.message-details .media p{
+margin: 0;
+font-size: 16px;
+direction: ltr;
+text-align: right;
+}
+
+.message-details .msg-content h5{
+font-size: 21px;
+margin-bottom: 15px;
+}
+
+.message-details .msg-content p{
+margin: 0;
+font-size: 16px;
+color: #1f2a3c9e;
+}
+
+.countdown-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.countdown-div .day, .countdown-div .hour, .countdown-div .min, .countdown-div .sec {
+    text-align: center;
+    padding: 4px 0 9px;
+    color: #fff;
+    width: 70px;
+    background: #da423d;
+    border-radius: 3px;
+}
+
+.countdown-div .day .num, .countdown-div .hour .num, .countdown-div .min .num, .countdown-div .sec .num {
+    display: block;
+    font-size: 23px;
+}
+
+.countdown-div .day .word, .countdown-div .hour .word, .countdown-div .min .word, .countdown-div .sec .word {
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.auctions-card {
+
+}
+
+.auctions-card .product{
+    
+}
+
+.auctions-card .product .product-media{
+    
+}
+
+.auctions-card .product .product-details{
+    
+}
+
+.auctions-card .product .product-details .product-name{
+    
+}
+
+.auctions-card .product .product-details .product-price{
+    
+}
+
+.auctions-card .product .product-details .product-price em{
+    
 }

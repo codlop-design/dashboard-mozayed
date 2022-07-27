@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -186,10 +187,16 @@
                   <img src="../assets/images/icons/gavel.svg" alt="">
                   <span>إدارة الأعين</span></a>
               </li>
-              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#">
-                  <img src="../assets/images/icons/auction.svg" alt="">
-                  <span>إدارة المزادات</span></a>
-              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                <img src="../assets/images/icons/auction.svg" alt="">
+                <span>إدارة المزادات</span></a>
+              <ul class="sidebar-submenu">
+                <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
+                <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
+                <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
+                <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+              </ul>
+            </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
                   <img src="../assets/images/icons/auctioneer.svg" alt="">
                   <span>إدارة المزايدين</span></a>
@@ -288,7 +295,8 @@
                                     <td>admin</td>
                                     <td>
                                         <div class="btns-table">
-                                            <a href="#" class="btn btn-success">
+                                            <a href="javascript:;" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" class="btn btn-success">
                                                 <i class="fa fa-edit"></i>
                                                 تعديل
                                             </a>
@@ -299,6 +307,50 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                  <td>
+                                      <div class="checkbox checkbox-primary custom-check">
+                                          <input id="inline-2" type="checkbox">
+                                          <label for="inline-2"></label>
+                                      </div>
+                                  </td>
+                                  <td>admin</td>
+                                  <td>
+                                      <div class="btns-table">
+                                          <a href="javascript:;" data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal" class="btn btn-success">
+                                              <i class="fa fa-edit"></i>
+                                              تعديل
+                                          </a>
+                                          <a href="#" class="btn btn-danger">
+                                              <i class="fa fa-trash"></i>
+                                              حذف
+                                          </a>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="checkbox checkbox-primary custom-check">
+                                        <input id="inline-2" type="checkbox">
+                                        <label for="inline-2"></label>
+                                    </div>
+                                </td>
+                                <td>admin</td>
+                                <td>
+                                    <div class="btns-table">
+                                        <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" class="btn btn-success">
+                                            <i class="fa fa-edit"></i>
+                                            تعديل
+                                        </a>
+                                        <a href="#" class="btn btn-danger">
+                                            <i class="fa fa-trash"></i>
+                                            حذف
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -336,8 +388,8 @@
             <div class="body-div">
               <div class="animate-chk custom-chk">
                 <div class="row">
-                    <label class="d-block" for="chk-ani">
-                        <input class="checkbox_animated" id="chk-ani"
+                    <label class="d-block" for="chk-ani0">
+                        <input class="checkbox_animated" id="chk-ani0"
                             type="checkbox"> تحديد كل الصلاحيات
                     </label>
                 </div>
@@ -345,27 +397,28 @@
                 <div class="check-list">
                     <div class="animate-chk">
                         <div class="row">
-                            <label class="d-block header-check" for="chk-ani">
-                                <input class="checkbox_animated" id="chk-ani"
-                                    type="checkbox"> تحديد الكل <span>عنوان الصلاحية</span>
+                            <label class="header-check" for="chk-ani">
+                              <span>إدارة الأعين</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
                             </label>
                             <div class="flex-perm">
                                 <div class="col">
                                     <label class="d-block" for="chk-ani">
                                         <input class="checkbox_animated" id="chk-ani"
-                                            type="checkbox"> Option 1
+                                            type="checkbox"> عرض
                                     </label>
                                     <label class="d-block" for="chk-ani1">
                                         <input class="checkbox_animated" id="chk-ani1"
-                                            type="checkbox"> Option 2
+                                            type="checkbox"> إضافة
                                     </label>
                                     <label class="d-block" for="chk-ani2">
                                         <input class="checkbox_animated" id="chk-ani2"
-                                            type="checkbox"> Option 3
+                                            type="checkbox"> تعديل
                                     </label>
                                     <label class="d-block" for="chk-ani3">
                                         <input class="checkbox_animated" id="chk-ani3"
-                                            type="checkbox"> Option 4
+                                            type="checkbox"> حذف
                                     </label>
                                 </div>
                             </div>
@@ -373,27 +426,28 @@
                     </div>
                     <div class="animate-chk">
                         <div class="row">
-                            <label class="d-block header-check" for="chk-ani">
-                                <input class="checkbox_animated" id="chk-ani"
-                                    type="checkbox"> تحديد الكل <span>عنوان الصلاحية</span>
+                            <label class="header-check" for="chk-ani">
+                                <span>إدارة المزادات</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
                             </label>
                             <div class="flex-perm">
                                 <div class="col">
                                     <label class="d-block" for="chk-ani">
                                         <input class="checkbox_animated" id="chk-ani"
-                                            type="checkbox"> Option 1
+                                            type="checkbox"> عرض
                                     </label>
                                     <label class="d-block" for="chk-ani1">
                                         <input class="checkbox_animated" id="chk-ani1"
-                                            type="checkbox"> Option 2
+                                            type="checkbox"> إضافة
                                     </label>
                                     <label class="d-block" for="chk-ani2">
                                         <input class="checkbox_animated" id="chk-ani2"
-                                            type="checkbox"> Option 3
+                                            type="checkbox"> تعديل
                                     </label>
                                     <label class="d-block" for="chk-ani3">
                                         <input class="checkbox_animated" id="chk-ani3"
-                                            type="checkbox"> Option 4
+                                            type="checkbox"> حذف
                                     </label>
                                 </div>
                             </div>
@@ -401,27 +455,28 @@
                     </div>
                     <div class="animate-chk">
                         <div class="row">
-                            <label class="d-block header-check" for="chk-ani">
-                                <input class="checkbox_animated" id="chk-ani"
-                                    type="checkbox"> تحديد الكل <span>عنوان الصلاحية</span>
+                            <label class="header-check" for="chk-ani">
+                                <span>إدارة المزايدين</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
                             </label>
                             <div class="flex-perm">
                                 <div class="col">
                                     <label class="d-block" for="chk-ani">
                                         <input class="checkbox_animated" id="chk-ani"
-                                            type="checkbox"> Option 1
+                                            type="checkbox"> عرض
                                     </label>
                                     <label class="d-block" for="chk-ani1">
                                         <input class="checkbox_animated" id="chk-ani1"
-                                            type="checkbox"> Option 2
+                                            type="checkbox"> إضافة
                                     </label>
                                     <label class="d-block" for="chk-ani2">
                                         <input class="checkbox_animated" id="chk-ani2"
-                                            type="checkbox"> Option 3
+                                            type="checkbox"> تعديل
                                     </label>
                                     <label class="d-block" for="chk-ani3">
                                         <input class="checkbox_animated" id="chk-ani3"
-                                            type="checkbox"> Option 4
+                                            type="checkbox"> حذف
                                     </label>
                                 </div>
                             </div>
@@ -429,32 +484,294 @@
                     </div>
                     <div class="animate-chk">
                         <div class="row">
-                            <label class="d-block header-check" for="chk-ani">
-                                <input class="checkbox_animated" id="chk-ani"
-                                    type="checkbox"> تحديد الكل <span>عنوان الصلاحية</span>
+                            <label class="header-check" for="chk-ani">
+                                <span>إدارة المستخدمين</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
                             </label>
                             <div class="flex-perm">
                                 <div class="col">
                                     <label class="d-block" for="chk-ani">
                                         <input class="checkbox_animated" id="chk-ani"
-                                            type="checkbox"> Option 1
+                                            type="checkbox"> عرض
                                     </label>
                                     <label class="d-block" for="chk-ani1">
                                         <input class="checkbox_animated" id="chk-ani1"
-                                            type="checkbox"> Option 2
+                                            type="checkbox"> إضافة
                                     </label>
                                     <label class="d-block" for="chk-ani2">
                                         <input class="checkbox_animated" id="chk-ani2"
-                                            type="checkbox"> Option 3
+                                            type="checkbox"> تعديل
                                     </label>
                                     <label class="d-block" for="chk-ani3">
                                         <input class="checkbox_animated" id="chk-ani3"
-                                            type="checkbox"> Option 4
+                                            type="checkbox"> حذف
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="animate-chk">
+                      <div class="row">
+                          <label class="header-check" for="chk-ani">
+                              <span>نوع العين</span>
+                                  <div><input class="checkbox_animated" id="chk-ani"
+                                    type="checkbox"> تحديد الكل </div>
+                          </label>
+                          <div class="flex-perm">
+                              <div class="col">
+                                  <label class="d-block" for="chk-ani">
+                                      <input class="checkbox_animated" id="chk-ani"
+                                          type="checkbox"> عرض
+                                  </label>
+                                  <label class="d-block" for="chk-ani1">
+                                      <input class="checkbox_animated" id="chk-ani1"
+                                          type="checkbox"> إضافة
+                                  </label>
+                                  <label class="d-block" for="chk-ani2">
+                                      <input class="checkbox_animated" id="chk-ani2"
+                                          type="checkbox"> تعديل
+                                  </label>
+                                  <label class="d-block" for="chk-ani3">
+                                      <input class="checkbox_animated" id="chk-ani3"
+                                          type="checkbox"> حذف
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="animate-chk">
+                      <div class="row">
+                          <label class="header-check" for="chk-ani">
+                             <span>خصائص العين</span>
+                                  <div><input class="checkbox_animated" id="chk-ani"
+                                    type="checkbox"> تحديد الكل </div>
+                          </label>
+                          <div class="flex-perm">
+                              <div class="col">
+                                  <label class="d-block" for="chk-ani">
+                                      <input class="checkbox_animated" id="chk-ani"
+                                          type="checkbox"> عرض
+                                  </label>
+                                  <label class="d-block" for="chk-ani1">
+                                      <input class="checkbox_animated" id="chk-ani1"
+                                          type="checkbox"> إضافة
+                                  </label>
+                                  <label class="d-block" for="chk-ani2">
+                                      <input class="checkbox_animated" id="chk-ani2"
+                                          type="checkbox"> تعديل
+                                  </label>
+                                  <label class="d-block" for="chk-ani3">
+                                      <input class="checkbox_animated" id="chk-ani3"
+                                          type="checkbox"> حذف
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="animate-chk">
+                      <div class="row">
+                          <label class="header-check" for="chk-ani">
+                              <span>نوع المزاد</span>
+                                  <div><input class="checkbox_animated" id="chk-ani"
+                                    type="checkbox"> تحديد الكل </div>
+                          </label>
+                          <div class="flex-perm">
+                              <div class="col">
+                                  <label class="d-block" for="chk-ani">
+                                      <input class="checkbox_animated" id="chk-ani"
+                                          type="checkbox"> عرض
+                                  </label>
+                                  <label class="d-block" for="chk-ani1">
+                                      <input class="checkbox_animated" id="chk-ani1"
+                                          type="checkbox"> إضافة
+                                  </label>
+                                  <label class="d-block" for="chk-ani2">
+                                      <input class="checkbox_animated" id="chk-ani2"
+                                          type="checkbox"> تعديل
+                                  </label>
+                                  <label class="d-block" for="chk-ani3">
+                                      <input class="checkbox_animated" id="chk-ani3"
+                                          type="checkbox"> حذف
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="animate-chk">
+                      <div class="row">
+                          <label class="header-check" for="chk-ani">
+                              <span>المدينة</span>
+                                  <div><input class="checkbox_animated" id="chk-ani"
+                                    type="checkbox"> تحديد الكل </div>
+                          </label>
+                          <div class="flex-perm">
+                              <div class="col">
+                                  <label class="d-block" for="chk-ani">
+                                      <input class="checkbox_animated" id="chk-ani"
+                                          type="checkbox"> عرض
+                                  </label>
+                                  <label class="d-block" for="chk-ani1">
+                                      <input class="checkbox_animated" id="chk-ani1"
+                                          type="checkbox"> إضافة
+                                  </label>
+                                  <label class="d-block" for="chk-ani2">
+                                      <input class="checkbox_animated" id="chk-ani2"
+                                          type="checkbox"> تعديل
+                                  </label>
+                                  <label class="d-block" for="chk-ani3">
+                                      <input class="checkbox_animated" id="chk-ani3"
+                                          type="checkbox"> حذف
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="animate-chk">
+                    <div class="row">
+                        <label class="header-check" for="chk-ani">
+                            <span>المنطقة</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
+                        </label>
+                        <div class="flex-perm">
+                            <div class="col">
+                                <label class="d-block" for="chk-ani">
+                                    <input class="checkbox_animated" id="chk-ani"
+                                        type="checkbox"> عرض
+                                </label>
+                                <label class="d-block" for="chk-ani1">
+                                    <input class="checkbox_animated" id="chk-ani1"
+                                        type="checkbox"> إضافة
+                                </label>
+                                <label class="d-block" for="chk-ani2">
+                                    <input class="checkbox_animated" id="chk-ani2"
+                                        type="checkbox"> تعديل
+                                </label>
+                                <label class="d-block" for="chk-ani3">
+                                    <input class="checkbox_animated" id="chk-ani3"
+                                        type="checkbox"> حذف
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-chk">
+                    <div class="row">
+                        <label class="header-check" for="chk-ani">
+                            <span>الجهة</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
+                        </label>
+                        <div class="flex-perm">
+                            <div class="col">
+                                <label class="d-block" for="chk-ani">
+                                    <input class="checkbox_animated" id="chk-ani"
+                                        type="checkbox"> عرض
+                                </label>
+                                <label class="d-block" for="chk-ani1">
+                                    <input class="checkbox_animated" id="chk-ani1"
+                                        type="checkbox"> إضافة
+                                </label>
+                                <label class="d-block" for="chk-ani2">
+                                    <input class="checkbox_animated" id="chk-ani2"
+                                        type="checkbox"> تعديل
+                                </label>
+                                <label class="d-block" for="chk-ani3">
+                                    <input class="checkbox_animated" id="chk-ani3"
+                                        type="checkbox"> حذف
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-chk">
+                    <div class="row">
+                        <label class="header-check" for="chk-ani">
+                           <span>الاعدادت العامة</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
+                        </label>
+                        <div class="flex-perm">
+                            <div class="col">
+                                <label class="d-block" for="chk-ani">
+                                    <input class="checkbox_animated" id="chk-ani"
+                                        type="checkbox"> عرض
+                                </label>
+                                <label class="d-block" for="chk-ani1">
+                                    <input class="checkbox_animated" id="chk-ani1"
+                                        type="checkbox"> إضافة
+                                </label>
+                                <label class="d-block" for="chk-ani2">
+                                    <input class="checkbox_animated" id="chk-ani2"
+                                        type="checkbox"> تعديل
+                                </label>
+                                <label class="d-block" for="chk-ani3">
+                                    <input class="checkbox_animated" id="chk-ani3"
+                                        type="checkbox"> حذف
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-chk">
+                    <div class="row">
+                        <label class="header-check" for="chk-ani">
+                            <span>طلبات التواصل</span>
+                                <div><input class="checkbox_animated" id="chk-ani"
+                                  type="checkbox"> تحديد الكل </div>
+                        </label>
+                        <div class="flex-perm">
+                            <div class="col">
+                                <label class="d-block" for="chk-ani">
+                                    <input class="checkbox_animated" id="chk-ani"
+                                        type="checkbox"> عرض
+                                </label>
+                                <label class="d-block" for="chk-ani1">
+                                    <input class="checkbox_animated" id="chk-ani1"
+                                        type="checkbox"> إضافة
+                                </label>
+                                <label class="d-block" for="chk-ani2">
+                                    <input class="checkbox_animated" id="chk-ani2"
+                                        type="checkbox"> تعديل
+                                </label>
+                                <label class="d-block" for="chk-ani3">
+                                    <input class="checkbox_animated" id="chk-ani3"
+                                        type="checkbox"> حذف
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-chk">
+                  <div class="row">
+                      <label class="header-check" for="chk-ani">
+                          <span>صفحات الموقع</span>
+                              <div><input class="checkbox_animated" id="chk-ani"
+                                type="checkbox"> تحديد الكل </div>
+                      </label>
+                      <div class="flex-perm">
+                          <div class="col">
+                              <label class="d-block" for="chk-ani">
+                                  <input class="checkbox_animated" id="chk-ani"
+                                      type="checkbox"> عرض
+                              </label>
+                              <label class="d-block" for="chk-ani1">
+                                  <input class="checkbox_animated" id="chk-ani1"
+                                      type="checkbox"> إضافة
+                              </label>
+                              <label class="d-block" for="chk-ani2">
+                                  <input class="checkbox_animated" id="chk-ani2"
+                                      type="checkbox"> تعديل
+                              </label>
+                              <label class="d-block" for="chk-ani3">
+                                  <input class="checkbox_animated" id="chk-ani3"
+                                      type="checkbox"> حذف
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               </div>
             </div>
             <div class="modal-footer mt-2">
@@ -478,8 +795,7 @@
   <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/scrollbar/simplebar.js"></script>
   <script src="../assets/js/scrollbar/custom.js"></script>
-  <script src="../assets/js/counter/jquery.waypoints.min.js"></script>
-  <script src="../assets/js/counter/jquery.counterup.min.js"></script>
+  <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/sidebar-menu.js"></script>
   <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
   <script src="../assets/js/notify/index.js"></script>
@@ -502,6 +818,7 @@
   <script src="../assets/js/filepond/filepond.min.js"></script>
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
+  <script src="../assets/js/steps/jquery-steps.min.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 
