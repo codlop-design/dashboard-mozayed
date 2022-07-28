@@ -19713,13 +19713,13 @@ p.data-attributes svg {
 .mobile-clock-widget .sec,
 .min,
 .hour {
-    position: absolute;
-    width: 24px;
-    height: 234px;
-    top: 0;
-    right: 102px;
-    margin-top: -30px;
-    margin-right: -25px
+    /* position: absolute; */
+    /* width: 24px; */
+    /* height: 234px; */
+    /* top: 0; */
+    /* right: 102px; */
+    /* margin-top: -30px; */
+    /* margin-right: -25px; */
 }
 
 .cal-date-widget .datepicker {
@@ -56451,47 +56451,47 @@ table img {
 }
 
 .message-details {
-padding: 20px;
+    padding: 20px;
 }
 
 .message-details .media {
-gap: 25px;
-align-items: center;
-margin-bottom: 20px;
-border-bottom: 1px solid #dee2e6;
-padding-bottom: 20px;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
 }
 
-.message-details .media img{
-width: 100px;
-height: 100px;
-border: 2px solid #dee2e6;
-padding: 2px;
-border-radius: 50%;
+.message-details .media img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #dee2e6;
+    padding: 2px;
+    border-radius: 50%;
 }
 
-.message-details .media h6{
-font-weight: bold;
-font-size: 17px;
-margin-bottom: 5px;
+.message-details .media h6 {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
 }
 
-.message-details .media p{
-margin: 0;
-font-size: 16px;
-direction: ltr;
-text-align: right;
+.message-details .media p {
+    margin: 0;
+    font-size: 16px;
+    direction: ltr;
+    text-align: right;
 }
 
-.message-details .msg-content h5{
-font-size: 21px;
-margin-bottom: 15px;
+.message-details .msg-content h5 {
+    font-size: 21px;
+    margin-bottom: 15px;
 }
 
-.message-details .msg-content p{
-margin: 0;
-font-size: 16px;
-color: #1f2a3c9e;
+.message-details .msg-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #1f2a3c9e;
 }
 
 .countdown-div {
@@ -56500,53 +56500,77 @@ color: #1f2a3c9e;
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.countdown-div .day, .countdown-div .hour, .countdown-div .min, .countdown-div .sec {
+.countdown-div .day,
+.countdown-div .hour,
+.countdown-div .min,
+.countdown-div .sec {
     text-align: center;
     padding: 4px 0 9px;
     color: #fff;
     width: 70px;
-    background: #da423d;
     border-radius: 3px;
 }
 
-.countdown-div .day .num, .countdown-div .hour .num, .countdown-div .min .num, .countdown-div .sec .num {
+.countdown-div .day .num,
+.countdown-div .hour .num,
+.countdown-div .min .num,
+.countdown-div .sec .num {
     display: block;
     font-size: 23px;
 }
 
-.countdown-div .day .word, .countdown-div .hour .word, .countdown-div .min .word, .countdown-div .sec .word {
+.countdown-div .day .word,
+.countdown-div .hour .word,
+.countdown-div .min .word,
+.countdown-div .sec .word {
     display: block;
     font-size: 13px;
     line-height: 15px;
 }
 
 .auctions-card {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.auctions-card .product{
-    
+.auctions-card .product {
+    box-shadow: 0 6px 25px 0 rgb(0 0 0 / 17%);
+    border-radius: 15px;
 }
 
-.auctions-card .product .product-media{
-    
+.auctions-card .product .product-media {
+    margin: 0;
+    position: relative;
 }
 
-.auctions-card .product .product-details{
-    
+.auctions-card .product .product-media img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-.auctions-card .product .product-details .product-name{
-    
+.auctions-card .product .product-details {
+    padding: 15px;
 }
 
-.auctions-card .product .product-details .product-price{
-    
+.auctions-card .product .product-details .product-name {
+    font-weight: normal;
+    font-size: 18px;
 }
 
-.auctions-card .product .product-details .product-price em{
-    
+.auctions-card .product .product-details .product-price {
+    display: flex;
+    gap: 5px;
+}
+
+.auctions-card .product .product-details .product-price em {
+    font-weight: normal;
+    font-style: normal;
 }

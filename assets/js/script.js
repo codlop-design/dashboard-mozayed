@@ -476,6 +476,8 @@ $(".hijri-date-input").hijriDatePicker({
       }
   });
 
+// $('.tagsinput').tagsInput();
+
 $(document).ready(function(){
   const myCountdown = new countdown({
     target: '.countdown-div',
@@ -484,6 +486,4 @@ $(document).ready(function(){
     minWord: ' دقيقة',
     secWord: ' ثانية'
 });
-})
-
-$('.tagsinput').tagsInput();
+});
