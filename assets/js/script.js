@@ -520,3 +520,11 @@ var myCountdown = new countdown({
   minWord: ' دقيقة',
   secWord: ' ثانية'
 });
+
+var myCountdown = new countdown({
+  target: '.count7',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
