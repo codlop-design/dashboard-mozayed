@@ -56494,16 +56494,38 @@ table img {
     color: #1f2a3c9e;
 }
 
+.count-sec {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: max-content;
+    margin: 0 auto;
+    background: rgb(255 255 255 / 95%);
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+    padding: 0 5px 4px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.count-sec p {
+
+    text-align: center;
+
+    margin-bottom: 0;
+
+    padding-top: 2px;
+
+    font-size: 14px;
+}
+
 .countdown-div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    gap: 8px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    gap: 0;
 }
 
 .countdown-div .day,
@@ -56511,10 +56533,13 @@ table img {
 .countdown-div .min,
 .countdown-div .sec {
     text-align: center;
-    padding: 4px 0 9px;
-    color: #fff;
-    width: 70px;
-    border-radius: 3px;
+    padding: 0 0 7px;
+    width: 60px;
+    border-left: 1px solid #dddddd;
+}
+
+.countdown-div .sec {
+    border-left: 0;
 }
 
 .countdown-div .day .num,
@@ -56522,7 +56547,8 @@ table img {
 .countdown-div .min .num,
 .countdown-div .sec .num {
     display: block;
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .countdown-div .day .word,
@@ -56530,39 +56556,65 @@ table img {
 .countdown-div .min .word,
 .countdown-div .sec .word {
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 15px;
 }
 
 .auctions-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 .auctions-card .product {
-    box-shadow: 0 6px 25px 0 rgb(0 0 0 / 17%);
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
+
 
 .auctions-card .product .product-media {
     margin: 0;
     position: relative;
 }
 
-.auctions-card .product .product-media img {
-    height: 250px;
+.auctions-card .product .product-media .img-div::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #000000ab, transparent);
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    object-fit: cover;
+    height: 50%;
     border-radius: 15px 15px 0 0;
 }
 
+.auctions-card .product .product-media .img-div {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.auctions-card .product .product-media img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: .3s;
+}
+
+.auctions-card .product:hover img {
+    transform: scale(1.1);
+}
+
 .auctions-card .product .product-details {
-    padding: 15px;
+    padding: 20px 15px;
 }
 
 .auctions-card .product .product-details .product-name {
     font-weight: normal;
     font-size: 18px;
+    line-height: 26px;
 }
 
 .auctions-card .product .product-details .product-price {
@@ -56570,7 +56622,111 @@ table img {
     gap: 5px;
 }
 
+.auctions-card .product .product-details .product-price span {
+
+    color: #B05338;
+
+    /* font-weight: normal; */
+}
+
 .auctions-card .product .product-details .product-price em {
     font-weight: normal;
     font-style: normal;
+}
+
+.c-card__ribbon {
+    background: #0d9488;
+    padding: 7px 25px 12px 32px;
+    border-radius: 10px 10px 10px 0px;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.16rem;
+    color: white;
+    position: absolute;
+    left: -14px;
+    top: 25px;
+    box-shadow: 0.7px 1.1px 6.6px -2px rgb(0 0 0 / 2%), 1.3px 2px 11px -2px rgb(0 0 0 / 4%), 1.9px 2.8px 13.3px -2px rgb(0 0 0 / 5%), 2.6px 3.9px 13.7px -2px rgb(0 0 0 / 6%), 3.9px 5.8px 13.4px -2px rgb(0 0 0 / 6%), 8px 12px 26px -2px rgb(0 0 0 / 7%);
+    z-index: 1;
+}
+
+.c-card__ribbon::before {
+    background: #0d9488;
+    display: block;
+    content: "";
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 0 16px;
+}
+
+
+.c-card__ribbon::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4094012605) 0%, rgba(0, 0, 0, 0) 150%);
+    display: block;
+    content: "";
+    width: 14px;
+    height: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 16px 0 0 16px;
+}
+
+.c-card__ribbon.next-auc {
+    background: #1587b0;
+}
+
+.c-card__ribbon.next-auc::before {
+    background: #1587b0;
+}
+
+.c-card__ribbon.finish-auc {
+    background: #B05338;
+}
+
+.c-card__ribbon.finish-auc::before {
+    background: #B05338;
+}
+
+.details-btn {
+    background: #1b5166;
+    color: #fff !important;
+    padding: 8px 25px;
+    display: none;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-size: 16px;
+    width: max-content;
+}
+
+.date-auc {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    background: rgb(255 255 255 / 80%);
+    backdrop-filter: blur(1px);
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.date-auc b {
+    display: block;
+}
+
+.date-auc em {
+    display: block;
+    font-style: normal;
+    font-size: 17px;
 }

@@ -478,12 +478,45 @@ $(".hijri-date-input").hijriDatePicker({
 
 // $('.tagsinput').tagsInput();
 
-$(document).ready(function(){
-  const myCountdown = new countdown({
-    target: '.countdown-div',
+  var myCountdown = new countdown({
+    target: '.count1',
     dayWord: ' يوم',
     hourWord: ' ساعة',
     minWord: ' دقيقة',
     secWord: ' ثانية'
 });
+var myCountdown = new countdown({
+  target: '.count2',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
+var myCountdown = new countdown({
+  target: '.count3',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
+var myCountdown = new countdown({
+  target: '.count4',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
+var myCountdown = new countdown({
+  target: '.count5',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
+var myCountdown = new countdown({
+  target: '.count6',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
 });

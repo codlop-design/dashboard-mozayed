@@ -55,7 +55,7 @@ const countdown = function(_config) {
 
     // If the count down is over, write some text
     if (distance < 0) {
-      element(".countdown").innerHTML = "EXPIRED";
+      element(".countdown-div").innerHTML = "منتهي";
     }
   }
 
