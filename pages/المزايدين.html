@@ -188,15 +188,15 @@
                   <span>إدارة الأعين</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
-                <img src="../assets/images/icons/auction.svg" alt="">
-                <span>إدارة المزادات</span></a>
-              <ul class="sidebar-submenu">
-                <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
-              </ul>
-            </li>
+                  <img src="../assets/images/icons/auction.svg" alt="">
+                  <span>إدارة المزادات</span></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
+                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                </ul>
+              </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
                   <img src="../assets/images/icons/auctioneer.svg" alt="">
                   <span>إدارة المزايدين</span></a>
@@ -204,6 +204,10 @@
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المستخدمين.html">
                   <img src="../assets/images/icons/employees.svg" alt="">
                   <span>إدارة المستخدمين</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المعاملات المالية.html">
+                  <img src="../assets/images/icons/wallet.svg" alt="">
+                  <span>المعاملات المالية</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
                   <img src="../assets/images/icons/services.svg" alt="">
@@ -284,19 +288,12 @@
                     <input class="form-control" type="text" placeholder="">
                   </div>
                   <div class="col-md-3 form-group">
-                    <label class="form-label">رقم الجوال</label>
+                    <label class="form-label">رقم الهوية</label>
                     <input class="form-control" type="number" placeholder="">
                   </div>
                   <div class="col-md-3 form-group">
-                    <label class="form-label">البريد الإلكتروني</label>
-                    <input class="form-control" type="email" placeholder="">
-                  </div>
-                  <div class="col-md-3 form-group">
-                    <label class="form-label">النوع</label>
-                    <select id="" class="select2-custom">
-                      <option value="">ذكر</option>
-                      <option value="">انثي</option>
-                    </select>
+                    <label class="form-label">رقم الجوال</label>
+                    <input class="form-control" type="number" placeholder="">
                   </div>
                 </div>
                 <div class="card-footer mt-2">
@@ -320,9 +317,8 @@
                         </div>
                       </th>
                       <th>الإسم</th>
+                      <th>رقم الهوية</th>
                       <th>رقم الجوال</th>
-                      <th>البريد الإلكتروني</th>
-                      <th>النوع</th>
                       <th>مفعل / غير مفعل</th>
                       <th></th>
                       <th>التحكم</th>
@@ -337,9 +333,8 @@
                         </div>
                       </td>
                       <td>Company</td>
-                      <td>01255454</td>
-                      <td>info@gmail.com</td>
-                      <td>ذكر</td>
+                      <td>85968242</td>
+                      <td>0127455454</td>
                       <td>
                         <div class="media">
                           <div class="icon-state">
@@ -391,24 +386,176 @@
     </div>
   </div>
 
-  <div class="modal fade modal-custom modal-user" id="details-modal">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade modal-custom" id="details-modal">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
-        <div class="card custom-card">
-          <div class="card-header"><img class="img-fluid" src="../assets/images/bg.jpg" alt=""></div>
-          <div class="card-profile"><img class="rounded-circle" src="../assets/images/user.svg" alt=""></div>
-          <div class="profile-details">
-            <h4>عبدالرحمن محمد علي</h4>
-            <h6>+966 15 075 3569</h6>
+        <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
+        <div class="bidder-profile">
+          <div class="profile-dtls">
+            <div class="img-name">
+              <img class="img-fluid" src="../assets/images/user.svg" alt="">
+              <div>
+                <h4>عبدالرحمن محمد علي</h4>
+                <h6>+966 15 075 3569</h6>
+              </div>
+            </div>
             <ul>
-              <li><p><i class="fa fa-address-card-o"></i>رقم الهوية</p><span>23542358421</span></li>
-              <li><p><i class="fa fa-calendar"></i>تاريخ الميلاد</p><span>18/02/1995</span></li>
-              <li><p><i class="fa fa-venus-mars"></i>النوع</p> <span>ذكر</span></li>
-              <li><p><i class="fa fa-user-o"></i>اسم المستخدم</p><span>hantash</span></li>
-              <li><p><i class="fa fa-key"></i>كلمة المرور</p><span class="">123456789</span></li>
+              <li>
+                <p><i class="fa fa-address-card-o"></i>رقم الهوية</p><span>23542358421</span>
+              </li>
+              <li>
+                <p><i class="fa fa-calendar"></i>تاريخ الميلاد</p><span>18/02/1995</span>
+              </li>
+              <li>
+                <p><i class="fa fa-venus-mars"></i>النوع</p> <span>ذكر</span>
+              </li>
+              <li>
+                <p><i class="fa fa-user-o"></i>اسم المستخدم</p><span>hantash</span>
+              </li>
+              <li>
+                <p><i class="fa fa-key"></i>كلمة المرور</p><span class="">123456789</span>
+              </li>
             </ul>
           </div>
+          <div class="auctions-transactions">
+            <div class="balance">
+              <p>الرصيد الحالي : <span>100,000</span> <em>ر.س</em></p>
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-success btn-icon">
+                <i class="icon-wallet"></i>
+                اضافة رصيد
+              </a>
+            </div>
+            <div class="tabs-auc-trans">
+              <ul class="tabs-nav">
+                <li class="active"><a href="#auc-tab"><i class="icon-home"></i>المزادات</a></li>
+                <li class=""><a href="#trans-tab"><i class="icon-home"></i>المعاملات</a></li>
+              </ul>
+              <div class="tabs-content">
+                <div class="content-div" id="auc-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered datatable">
+                        <thead>
+                            <tr>
+                                <th>رقم المزاد</th>
+                                <th>اسم المزاد</th>
+                                <th>نوع المزاد</th>
+                                <th>الترسية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1424</td>
+                                <td>مزاد البركة</td>
+                                <td>الكتروني حضوري</td>
+                                <td>
+                                  <span class="check-auc">
+                                    <i class="icon-check"></i>
+                                    تم الترسية بمبلغ <br>
+                                    <b>10,000,000 <em>ر.س</em></b>
+                                  </span>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>1424</td>
+                              <td>مزاد البركة</td>
+                              <td>الكتروني حضوري</td>
+                              <td>
+                                <span class="times-auc">
+                                  <i class="icon-close"></i>
+                                </span>
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+                <div class="content-div" id="trans-tab">
+                  <div class="table-responsive">
+                    <table class="table table-bordered datatable">
+                        <thead>
+                            <tr>
+                                <th>رقم العملية</th>
+                                <th>نوع العملية</th>
+                                <th>القيمة</th>
+                                <th>الرصيد</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1424</td>
+                                <td>سحب</td>
+                                <td>10,000</td>
+                                <td>
+                                    <b>120,000</b>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>1520</td>
+                              <td>ايداع</td>
+                              <td>30,000</td>
+                              <td>
+                                  <b>130,000</b>
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-custom modal-above" id="exampleModal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">اضافة رصيد</h5>
+        </div>
+        <div class="modal-body pb-0">
+          <form class="form" method="post" action="">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label class="form-label">رقم الشيك</label>
+                <input class="form-control" type="number" placeholder="">
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label">المبلغ</label>
+                <input class="form-control" type="number" placeholder="">
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label">اسم البنك</label>
+                <input class="form-control" type="text" placeholder="">
+              </div>
+              <div class="col-md-6 form-group">
+                <label class="form-label">رقم الجوال</label>
+                <input class="form-control" type="number" placeholder="">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label class="form-label">الصورة</label>
+                <input type="file" class="my-pond" name="filepond" />
+              </div>
+            </div>
+            <div class="modal-footer mt-2">
+              <button class="btn btn-primary btn-air-primary btn-icon" type="button" data-bs-dismiss="modal">
+                <i class="fa fa-plus"></i>
+                اضافة
+              </button>
+              <button class="btn btn-danger btn-air-danger btn-icon" type="button" data-bs-dismiss="modal">
+                <i class="fa fa-times"></i>
+                خروج
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -476,6 +476,19 @@ $(".hijri-date-input").hijriDatePicker({
       }
   });
 
+  $(function() {
+    $('.tabs-nav a').click(function() {
+      // Check for active
+      $('.tabs-nav li').removeClass('active');
+      $(this).parent().addClass('active');
+      // Display active tab
+      let currentTab = $(this).attr('href');
+      $('.tabs-content .content-div').hide();
+      $(currentTab).show();
+      return false;
+    });
+  });
+
 // $('.tagsinput').tagsInput();
 
   var myCountdown = new countdown({
@@ -528,3 +541,5 @@ var myCountdown = new countdown({
   minWord: ' دقيقة',
   secWord: ' ثانية'
 });
+
+
