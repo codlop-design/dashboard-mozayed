@@ -491,6 +491,14 @@ $(".hijri-date-input").hijriDatePicker({
 
 // $('.tagsinput').tagsInput();
 
+var myCountdown = new countdown({
+  target: '.count7',
+  dayWord: ' يوم',
+  hourWord: ' ساعة',
+  minWord: ' دقيقة',
+  secWord: ' ثانية'
+});
+
   var myCountdown = new countdown({
     target: '.count1',
     dayWord: ' يوم',
@@ -534,12 +542,5 @@ var myCountdown = new countdown({
   secWord: ' ثانية'
 });
 
-var myCountdown = new countdown({
-  target: '.count7',
-  dayWord: ' يوم',
-  hourWord: ' ساعة',
-  minWord: ' دقيقة',
-  secWord: ' ثانية'
-});
 
 

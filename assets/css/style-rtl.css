@@ -56331,8 +56331,8 @@ table img {
 }
 
 .modal-above .modal-dialog {
-    width: 70%;
-    margin-top: 50px;
+    /* width: 70%;
+    margin-top: 50px; */
 }
 
 .modal-user .modal-content {
@@ -56909,6 +56909,7 @@ table img {
     align-items: center;
     justify-content: center;
     font-size: 17px;
+    z-index: 9;
 }
 
 .bidder-profile {
@@ -57127,6 +57128,11 @@ table img {
     font-size: 14px;
 }
 
+.times-auc {
+    color: #f44336;
+    font-size: 15px;
+}
+
 .times-auc i {
     width: 25px;
     height: 25px;
@@ -57137,11 +57143,39 @@ table img {
     align-items: center;
     border-radius: 50%;
     margin: auto;
+    margin-bottom: 5px;
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #f44336;
 }
 
 em {
     font-style: normal;
+}
+
+span.red-bg {
+    display: block;
+    border: 1px solid #f44336;
+    padding: 2px 5px;
+    border-radius: 50px;
+    color: #f44336;
+    width: 65px;
+    margin: 0 auto;
+}
+
+span.green-bg {
+    display: block;
+    border: 1px solid #009688;
+    padding: 2px 5px;
+    border-radius: 50px;
+    color: #009688;
+    width: 65px;
+    margin: 0 auto;
+}
+
+.font-sz-cust {
+    font-weight: bold;
+    color: #1981d4 !important;
+    letter-spacing: 1px;
+    font-size: 17px;
 }
 
 /* abdo resposive */
