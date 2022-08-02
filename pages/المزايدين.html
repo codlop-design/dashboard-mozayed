@@ -20,6 +20,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -184,12 +186,22 @@
                   <span>الصلاحيات والأدوار</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="الأعين.html">
-                  <img src="../assets/images/icons/gavel.svg" alt="">
+                  <img src="../assets/images/icons/building.svg" alt="">
                   <span>إدارة الأعين</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
                   <img src="../assets/images/icons/auction.svg" alt="">
-                  <span>إدارة المزادات</span></a>
+                  <span>المزاد الحضوري</span></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
+                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
+                  <img src="../assets/images/icons/gavel.svg" alt="">
+                  <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
                   <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
@@ -208,6 +220,10 @@
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المعاملات المالية.html">
                   <img src="../assets/images/icons/wallet.svg" alt="">
                   <span>المعاملات المالية</span></a>
+              </li>
+              <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="القاعات.html">
+                  <img src="../assets/images/icons/hall.svg" alt="">
+                  <span>القاعات</span></a>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
                   <img src="../assets/images/icons/services.svg" alt="">
@@ -288,12 +304,15 @@
                     <input class="form-control" type="text" placeholder="">
                   </div>
                   <div class="col-md-3 form-group">
-                    <label class="form-label">رقم الهوية</label>
+                    <label class="form-label">رقم الجوال</label>
                     <input class="form-control" type="number" placeholder="">
                   </div>
                   <div class="col-md-3 form-group">
-                    <label class="form-label">رقم الجوال</label>
-                    <input class="form-control" type="number" placeholder="">
+                    <label class="form-label">النوع</label>
+                    <select id="" class="select2-custom">
+                      <option value="">ذكر</option>
+                      <option value="">انثي</option>
+                    </select>
                   </div>
                 </div>
                 <div class="card-footer mt-2">
@@ -306,69 +325,251 @@
               <div class="line-body"></div>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered datatable">
-                  <thead>
-                    <tr>
-                      <th>
-                        <div class="checkbox checkbox-primary">
-                          <input id="inline-1" type="checkbox">
-                          <label for="inline-1">تحديد الكل</label>
-                        </div>
-                      </th>
-                      <th>الإسم</th>
-                      <th>رقم الهوية</th>
-                      <th>رقم الجوال</th>
-                      <th>مفعل / غير مفعل</th>
-                      <th></th>
-                      <th>التحكم</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="checkbox checkbox-primary custom-check">
-                          <input id="inline-2" type="checkbox">
-                          <label for="inline-2"></label>
-                        </div>
-                      </td>
-                      <td>Company</td>
-                      <td>85968242</td>
-                      <td>0127455454</td>
-                      <td>
-                        <div class="media">
-                          <div class="icon-state">
-                            <label class="switch">
-                              <input name="" value="active" class="" type="checkbox">
-                              <span class="switch-state"></span>
-                            </label>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="btns-table">
-                          <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#details-modal">
-                            <i class="fa fa-eye"></i>
-                            عرض تفاصيل المزايد
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="btns-table">
-                          <a href="اضافة مزايد.html" class="btn btn-success">
-                            <i class="fa fa-edit"></i>
-                            تعديل
-                          </a>
-                          <a href="#" class="btn btn-danger">
-                            <i class="fa fa-trash"></i>
-                            حذف
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <ul class="bidder-div">
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <p class="active-bid">مفعل</p>
+                    <!-- <p class="disactive-bid">غير مفعل</p> -->
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <!-- <p class="active-bid">مفعل</p> -->
+                    <p class="disactive-bid">غير مفعل</p>
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <p class="active-bid">مفعل</p>
+                    <!-- <p class="disactive-bid">غير مفعل</p> -->
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <!-- <p class="active-bid">مفعل</p> -->
+                    <p class="disactive-bid">غير مفعل</p>
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <p class="active-bid">مفعل</p>
+                    <!-- <p class="disactive-bid">غير مفعل</p> -->
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <!-- <p class="active-bid">مفعل</p> -->
+                    <p class="disactive-bid">غير مفعل</p>
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <!-- <p class="active-bid">مفعل</p> -->
+                    <p class="disactive-bid">غير مفعل</p>
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <p class="active-bid">مفعل</p>
+                    <!-- <p class="disactive-bid">غير مفعل</p> -->
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="bid-dts">
+                    <img src="../assets/images/user.svg" alt="">
+                    <h3>
+                      Abdo Mohamed Ali
+                      <span>+966 15 075 3569</span>
+                      <em>ذكر</em>
+                    </h3>
+                    <!-- <p class="active-bid">مفعل</p> -->
+                    <p class="disactive-bid">غير مفعل</p>
+                  </div>
+                  <div class="action-btns">
+                    <div class="btn-edt-dlt">
+                      <a href="اضافة مزايد.html" class="edit" aria-label="تعديل" data-microtip-position="top"
+                        role="tooltip">
+                        <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="delete" aria-label="حذف" data-microtip-position="top" role="tooltip">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="view-dts-bid" data-bs-toggle="modal" data-bs-target="#details-modal">
+                      <i class="fa fa-eye"></i>
+                      عرض تفاصيل المزايد
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -397,6 +598,10 @@
               <div>
                 <h4>عبدالرحمن محمد علي</h4>
                 <h6>+966 15 075 3569</h6>
+                <div class="active-disactive">
+                  <p class="active-bid">مفعل</p>
+                  <!-- <p class="disactive-bid">غير مفعل</p> -->
+                </div>
               </div>
             </div>
             <ul>
@@ -428,90 +633,90 @@
             </div>
             <div class="tabs-auc-trans">
               <ul class="tabs-nav">
-                <li class="active"><a href="#auc-tab"><i class="icon-home"></i>المزادات</a></li>
-                <li class=""><a href="#trans-tab"><i class="icon-home"></i>المعاملات</a></li>
+                <li class="active"><a href="#auc-tab"><i class="fa fa-gavel"></i>المزادات</a></li>
+                <li class=""><a href="#trans-tab"><i class="fa fa-money"></i>المعاملات</a></li>
               </ul>
               <div class="tabs-content">
                 <div class="content-div" id="auc-tab">
                   <div class="table-responsive">
                     <table class="table table-bordered datatable">
-                        <thead>
-                            <tr>
-                                <th>رقم المزاد</th>
-                                <th>اسم المزاد</th>
-                                <th>نوع المزاد</th>
-                                <th>الترسية</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                  <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                  class="font-sz-cust">
-                                  1424
-                                </a>
-                                </td>
-                                <td>مزاد البركة</td>
-                                <td>حضوري</td>
-                                <td>
-                                  <span class="check-auc">
-                                    <i class="icon-check"></i>
-                                    تم الترسية بمبلغ <br>
-                                    <b>10,000,000 <em>ر.س</em></b>
-                                  </span>
-                                </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                class="font-sz-cust">
-                                542
-                              </a>
-                              </td>
-                              <td>مزاد البركة</td>
-                              <td>الكتروني</td>
-                              <td>
-                                <span class="times-auc">
-                                  <i class="icon-close"></i>
-                                  لم يتم الترسية
-                                </span>
-                              </td>
-                          </tr>
-                        </tbody>
+                      <thead>
+                        <tr>
+                          <th>رقم المزاد</th>
+                          <th>اسم المزاد</th>
+                          <th>نوع المزاد</th>
+                          <th>الترسية</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
+                              class="font-sz-cust">
+                              1424
+                            </a>
+                          </td>
+                          <td>مزاد البركة</td>
+                          <td>حضوري</td>
+                          <td>
+                            <span class="check-auc">
+                              <i class="icon-check"></i>
+                              تم الترسية بمبلغ <br>
+                              <b>10,000,000 <em>ر.س</em></b>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
+                              class="font-sz-cust">
+                              542
+                            </a>
+                          </td>
+                          <td>مزاد البركة</td>
+                          <td>الكتروني</td>
+                          <td>
+                            <span class="times-auc">
+                              <i class="icon-close"></i>
+                              لم يتم الترسية
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
-                </div>
+                  </div>
                 </div>
                 <div class="content-div" id="trans-tab">
                   <div class="table-responsive">
                     <table class="table table-bordered datatable">
-                        <thead>
-                            <tr>
-                                <th>رقم العملية</th>
-                                <th>نوع العملية</th>
-                                <th>القيمة</th>
-                                <th>الرصيد</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1424</td>
-                                <td><span class="red-bg">سحب</span></td>
-                                <td>10,000</td>
-                                <td>
-                                    <b>120,000</b>
-                                </td>
-                            </tr>
-                            <tr>
-                              <td>1520</td>
-                              <td><span class="green-bg">ايداع</span></td>
-                              <td>30,000</td>
-                              <td>
-                                  <b>130,000</b>
-                              </td>
-                          </tr>
-                        </tbody>
+                      <thead>
+                        <tr>
+                          <th>رقم العملية</th>
+                          <th>نوع العملية</th>
+                          <th>القيمة</th>
+                          <th>الرصيد</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1424</td>
+                          <td><span class="red-bg">سحب</span></td>
+                          <td>10,000</td>
+                          <td>
+                            <b>120,000</b>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1520</td>
+                          <td><span class="green-bg">ايداع</span></td>
+                          <td>30,000</td>
+                          <td>
+                            <b>130,000</b>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -570,66 +775,243 @@
     </div>
   </div>
 
-  <div class="modal fade modal-custom modal-above" id="details-auc" data-bs-backdrop="static">
+
+  <div class="modal fade modal-custom" id="details-auc" data-bs-backdrop="static">
     <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="details-auc-sec">
-                <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
-                <div class="right-sec">
-                    <div class="name-auc">
-                        <h3>
-                            <div>
-                                <i class="fa fa-gavel"></i>
-                                مزاد البركة
-                            </div>
-                            <em>جاري</em>
-                        </h3>
-                        <ul>
-                            <li><span>رقم المزاد :</span>14076242</li>
-                            <li><span>نوع المزاد :</span>الكتروني</li>
-                        </ul>
-                    </div>
-                    <img class="img-auc" src="../assets/images/auc/1.webp" alt="">
-                    <p class="desc">تعلن مؤسسة يوسف الحمياني تحت إشراف مركز الإسنـاد والتصفية "إنفاذ“ وبقرار من
-                        محكمة التنفيـذ عن بيع 4 عقارات بمواقـع مميـزة في محافظـة الدوادمي</p>
+      <div class="modal-content">
+        <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
+        <div class="details-auc-sec">
+          <div class="right-sec">
+            <div class="name-auc">
+              <h3>
+                <div>
+                  <i class="fa fa-gavel"></i>
+                  مزاد البركة
                 </div>
-                <div class="left-sec">
-                    <div class="count-sec-modal">
-                        <p>متبقي علي انتهاء المزاد</p>
-                        <div class="countdown-div count7" data-date="9-8-2022" data-time="12:00">
-                            <div class="day"><span class="num"></span><span class="word"></span>
-                            </div>
-                            <div class="hour"><span class="num"></span><span class="word"></span>
-                            </div>
-                            <div class="min"><span class="num"></span><span class="word"></span>
-                            </div>
-                            <div class="sec"><span class="num"></span><span class="word"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><i class="icon-ruler-alt"></i><span>سعر المتر :</span>14076242</li>
-                        <li><i class="icon-money"></i><span>السعر الافتتاحي :</span>10,500,000<em>ر.س</em><b>-&nbsp;
-                                عشرة ملايين وخمسمائة الف ريال سعودي</b></li>
-                        <li><i class="icon-minus"></i><span>الحد الأدني للمزايدة
-                                :</span>50,000<em>ر.س</em><b>-&nbsp; خمسون الف ريال سعودي</b></li>
-                        <li><i class="icon-thumb-up"></i><span>نسبة السعي :</span>0,000<em>رس</em></li>
-                        <li><i class="icon-tag"></i><span>نسبة الضرائب من السعي :</span>0,000<em>ر.س</em></li>
-                    </ul>
-                    <div class="map-div">
-                        <h3>
-                            <i class="icon-map-alt"></i>
-                            مكان المزاد علي الخريطة
-                        </h3>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.0097887602174!2d43.97140298512936!3d26.358545383369464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157f59fec96e5331%3A0x2d3bb18ac07a3d8e!2z2YPZiNivINmE2YjYqCDZhNmE2KjYsdmF2KzYqSDZiNin2YTYqti12YXZitmFINio2LHZitiv2Kk!5e0!3m2!1sar!2seg!4v1659019077360!5m2!1sar!2seg"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+                <em>جاري</em>
+              </h3>
+              <ul>
+                <li><span>رقم المزاد :</span>14076242</li>
+                <li><span>نوع المزاد :</span>الكتروني</li>
+              </ul>
             </div>
+            <img class="img-auc" src="../assets/images/auc/1.webp" alt="">
+            <p class="desc">تعلن مؤسسة يوسف الحمياني تحت إشراف مركز الإسنـاد والتصفية "إنفاذ“ وبقرار من
+              محكمة التنفيـذ عن بيع 4 عقارات بمواقـع مميـزة في محافظـة الدوادمي</p>
+          </div>
+          <div class="left-sec">
+            <ul class="prices">
+              <li>
+                <p>أعلى قيمة للمزايدة</p>
+                <span>1,700,000 <em>ر.س</em></span>
+              </li>
+              <li>
+                <p>المبلغ الإجمالي</p>
+                <span>2,003,875 <em>ر.س</em></span>
+              </li>
+              <li>
+                <p>يبدأ المزاد بمبلغ</p>
+                <span>1,400,000 <em>ر.س</em></span>
+              </li>
+            </ul>
+            <div class="flex-l-r">
+              <div class="right-box">
+                <div class="count-sec-modal">
+                  <p>متبقي علي انتهاء المزاد</p>
+                  <div class="countdown-div count7" data-date="9-8-2022" data-time="12:00">
+                    <div class="day"><span class="num"></span><span class="word"></span>
+                    </div>
+                    <div class="hour"><span class="num"></span><span class="word"></span>
+                    </div>
+                    <div class="min"><span class="num"></span><span class="word"></span>
+                    </div>
+                    <div class="sec"><span class="num"></span><span class="word"></span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="dts-auc-ul">
+                  <li><img src="../assets/images/icons/tape-measure.svg" alt=""><span>سعر المتر
+                      :</span>226.67 <em>رس</em></li>
+                  <li><img src="../assets/images/icons/bidding.svg" alt=""><span>الحد الأدني للمزايدة
+                      :</span>100,000<em>ر.س</em></li>
+                  <li><img src="../assets/images/icons/cash.svg" alt=""><span>نسبة السعي
+                      :</span>0,000<em>رس</em></li>
+                  <li><img src="../assets/images/icons/house.svg" alt=""><span>نسبة الضرائب من السعي
+                      :</span>0,000<em>ر.س</em>
+                  </li>
+                </ul>
+              </div>
+              <div class="left-box">
+                <h3>آخر المزايدات</h3>
+                <ul>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span>محمد 850</span>
+                      <em>منذ 3 ساعات 35 دقائق</em>
+                    </p>
+                    <b>1,700,000 <em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span>خالد 784</span>
+                      <em>منذ 4 ساعات 20 دقائق</em>
+                    </p>
+                    <b>1,600,000 <em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span>محمد 850</span>
+                      <em>منذ 4 ساعات 50 دقائق</em>
+                    </p>
+                    <b>1,500,000 <em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="aleayin-div">
+              <h3>
+                <i class="icon-direction"></i>
+                قطعة ارض في مدينة الأحساء علي طريق الأمير سعود بن جلوي
+              </h3>
+              <ul class="imgs-auc">
+                <li>
+                  <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" data-width="1200"
+                    data-height="900" itemprop="">
+                    <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" itemprop="thumbnail"
+                      alt="Image description">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" data-width="1200"
+                    data-height="900" itemprop="">
+                    <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" itemprop="thumbnail"
+                      alt="Image description">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" data-width="1200"
+                    data-height="900" itemprop="">
+                    <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" itemprop="thumbnail"
+                      alt="Image description">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" data-width="1200"
+                    data-height="900" itemprop="">
+                    <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" itemprop="thumbnail"
+                      alt="Image description">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+
+  <!-- photoswipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+            title="Close (Esc)"></button>
+          <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
+            class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- photoswipe / end -->
+
+
 
   <!-- latest jquery-->
   <script src="../assets/js/jquery-3.5.1.min.js"></script>
@@ -659,6 +1041,8 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
