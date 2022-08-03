@@ -487,6 +487,15 @@ $(".hijri-date-input").hijriDatePicker({
       $(currentTab).show();
       return false;
     });
+
+    $('.popup-youtube').magnificPopup({
+      disableOn: 300,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
   });
 
 
@@ -517,15 +526,6 @@ $(".hijri-date-input").hijriDatePicker({
   });
 
 }(jQuery));
-
-$('.popup-youtube').magnificPopup({
-  disableOn: 300,
-  type: 'iframe',
-  mainClass: 'mfp-fade',
-  removalDelay: 160,
-  preloader: false,
-  fixedContentPos: false
-});
 
 // $('.tagsinput').tagsInput();
 
