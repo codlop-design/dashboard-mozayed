@@ -491,11 +491,7 @@ $(".hijri-date-input").hijriDatePicker({
 
 
 (function($) {
-
-  // Init empty gallery array
   var container = [];
-
-  // Loop over gallery items and push it to the array
   $('.imgs-auc').find('li').each(function() {
     var $link = $(this).find('a'),
       item = {
@@ -507,13 +503,8 @@ $(".hijri-date-input").hijriDatePicker({
     container.push(item);
   });
 
-  // Define click event on gallery item
   $('.imgs-auc li a').click(function(event) {
-
-    // Prevent location change
     event.preventDefault();
-
-    // Define object and gallery options
     var $pswp = $('.pswp')[0],
       options = {
         index: $(this).parent('li').index(),
@@ -521,13 +512,20 @@ $(".hijri-date-input").hijriDatePicker({
         showHideOpacity: true
       };
 
-    // Initialize PhotoSwipe
     var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
     gallery.init();
   });
 
 }(jQuery));
 
+$('.popup-youtube').magnificPopup({
+  disableOn: 300,
+  type: 'iframe',
+  mainClass: 'mfp-fade',
+  removalDelay: 160,
+  preloader: false,
+  fixedContentPos: false
+});
 
 // $('.tagsinput').tagsInput();
 

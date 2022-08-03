@@ -20,6 +20,9 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -72,7 +75,7 @@
                       <div class="notification-img"><img src="../assets/images/user.svg" alt="">
                       </div>
                       <div class="media-body">
-                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <h5> <a class="m-0" href="#">Abdelrahman Mohamed</a></h5>
                         <p>قام بتسجيل الدخول</p><span>10:20</span>
                       </div>
                     </div>
@@ -82,7 +85,7 @@
                       <div class="notification-img"><img src="../assets/images/user.svg" alt="">
                       </div>
                       <div class="media-body">
-                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <h5> <a class="m-0" href="#">Abdelrahman Mohamed</a></h5>
                         <p>قام بتسجيل الدخول</p><span>10:20</span>
                       </div>
                     </div>
@@ -92,7 +95,7 @@
                       <div class="notification-img"><img src="../assets/images/user.svg" alt="">
                       </div>
                       <div class="media-body">
-                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <h5> <a class="m-0" href="#">Abdelrahman Mohamed</a></h5>
                         <p>قام بتسجيل الدخول</p><span>10:20</span>
                       </div>
                     </div>
@@ -102,7 +105,7 @@
                       <div class="notification-img"><img src="../assets/images/user.svg" alt="">
                       </div>
                       <div class="media-body">
-                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <h5> <a class="m-0" href="#">Abdelrahman Mohamed</a></h5>
                         <p>قام بتسجيل الدخول</p><span>10:20</span>
                       </div>
                     </div>
@@ -112,7 +115,7 @@
                       <div class="notification-img"><img src="../assets/images/user.svg" alt="">
                       </div>
                       <div class="media-body">
-                        <h5> <a class="m-0" href="user-profile.html">Abdelrahman Mohamed</a></h5>
+                        <h5> <a class="m-0" href="#">Abdelrahman Mohamed</a></h5>
                         <p>قام بتسجيل الدخول</p><span>10:20</span>
                       </div>
                     </div>
@@ -160,7 +163,7 @@
                 </svg>
               </div>
               <ul class="profile-dropdown onhover-show-div">
-                <li><a href="profile.html"><i class="fa fa-user"></i><span>الملف الشخصي</span></a></li>
+                <li><a href="الملف الشخصي.html"><i class="fa fa-user"></i><span>الملف الشخصي</span></a></li>
                 <li><a href="login.html"><i class="fa fa-sign-out"> </i><span>تسجيل خروج</span></a></li>
               </ul>
             </li>
@@ -378,7 +381,7 @@
                       <td>خاص</td>
                       <td>
                         <div class="btns-table btns-col">
-                          <a href="#" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#details-modal">
+                          <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#details-modal">
                             <i class="fa fa-eye"></i>
                             عرض تفاصيل العين
                           </a>
@@ -421,23 +424,158 @@
     </div>
   </div>
 
-  <!-- <div class="modal fade modal-custom" id="details-modal">
+
+  <div class="modal fade modal-custom" id="details-modal" data-bs-backdrop="static">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">تفاصيل العين</h5>
-        </div>
-        <div class="modal-body pb-0">
-          
-          <div class="modal-footer mt-2">
-            <button class="btn btn-danger btn-air-danger btn-icon" type="button" data-bs-dismiss="modal">
-              <i class="fa fa-times"></i>
-              خروج
-            </button>
+        <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
+        <div class="details-ayen">
+          <div class="rightside">
+            <h3>
+              <i class="icon-direction"></i>
+              قطعة ارض في مدينة الأحساء علي طريق الأمير سعود بن جلوي
+            </h3>
+            <ul class="imgs-auc">
+              <li>
+                <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" data-width="1200"
+                  data-height="900" itemprop="">
+                  <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+              </li>
+              <li>
+                <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" data-width="1200"
+                  data-height="900" itemprop="">
+                  <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+              </li>
+              <li>
+                <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" data-width="1200"
+                  data-height="900" itemprop="">
+                  <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+              </li>
+              <li>
+                <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" data-width="1200"
+                  data-height="900" itemprop="">
+                  <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+              </li>
+            </ul>
+            <div class="map-div">
+              <h3>
+                <i class="icon-map-alt"></i>
+                موقع العين علي جوجل
+              </h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.0097887602174!2d43.97140298512936!3d26.358545383369464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157f59fec96e5331%3A0x2d3bb18ac07a3d8e!2z2YPZiNivINmE2YjYqCDZhNmE2KjYsdmF2KzYqSDZiNin2YTYqti12YXZitmFINio2LHZitiv2Kk!5e0!3m2!1sar!2seg!4v1659521060828!5m2!1sar!2seg" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="leftside">
+            <ul class="dts-ul">
+              <li><img src="../assets/images/icons/icon-deails/015-pin.svg" alt=""><span>نوع العين
+                  :</span>عقار</li>
+              <li><img src="../assets/images/icons/icon-deails/001-cityscape.svg" alt=""><span>المدينة
+                  :</span>بريدة</li>
+              <li><img src="../assets/images/icons/icon-deails/002-map-location.svg" alt=""><span>المنطقة
+                  :</span>القصيم</li>
+              <li><img src="../assets/images/icons/icon-deails/003-document.svg" alt=""><span>الجهة
+                  :</span>حكومي</li>
+              <li><img src="../assets/images/icons/icon-deails/007-book.svg" alt=""><span>رقم القضية
+                  :</span>5151</li>
+              <li><img src="../assets/images/icons/icon-deails/010-law.svg" alt=""><span>اسم القضية
+                  :</span>قطعة ارض</li>
+              <li><img src="../assets/images/icons/icon-deails/004-building.svg" alt=""><span>اسم المحكمة
+                  :</span>محكمة القصيم</li>
+              <li><img src="../assets/images/icons/icon-deails/005-man.svg" alt=""><span>اسم القاضي
+                  :</span>محمد احمد مصطفي</li>
+              <li><img src="../assets/images/icons/cash.svg" alt=""><span>السعر التقديري للعين
+                  :</span>8,500,000<em>ر.س</em></li>
+              <li><img src="../assets/images/icons/icon-deails/008-life-insurance.svg" alt=""><span>مبلغ التأمين
+                  :</span>500,000<em>ر.س</em></li>
+              <li><img src="../assets/images/icons/icon-deails/006-document-1.svg" alt=""><span>اسم دائرة التنفيذ
+                  :</span>دائرة مختصة</li>
+              <li><img src="../assets/images/icons/icon-deails/009-area.svg" alt=""><span>المساحة
+                  :</span>1500<em>م²</em></li>
+            </ul>
+            <hr>
+            <ul class="dts-ul">
+              <li><img src="../assets/images/icons/icon-deails/013-up-arrow.svg" alt=""><span>شمالاً
+                  :</span>شارع عرض 20م بطول 20م</li>
+              <li><img src="../assets/images/icons/icon-deails/012-down-arrow.svg" alt=""><span>جنوباً
+                  :</span>قطعة رقم 502 بطول 20م</li>
+              <li><img src="../assets/images/icons/icon-deails/011-right-arrow.svg" alt=""><span>شـرقـاً
+                  :</span>قطعة رقم 499 بطول 25م</li>
+              <li><img src="../assets/images/icons/icon-deails/014-left-arrow.svg" alt=""><span>غـربـاً
+                  :</span>قطعة رقم 503 بطول 25م</li>
+            </ul>
+            <hr>
+            <div class="video-attachment">
+              <div class="attach-div">
+                <h3>
+                  <i class="icon-clip"></i>
+                  المرفقات
+                </h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/pdf.svg" alt="">
+                      <span>البروشور</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="video-div">
+                <a href="https://www.youtube.com/watch?v=FIVcTU5Bb4Y" class="video-btn popup-youtube">
+                  <i class="icon-control-play"></i>
+              </a>
+              <span>عرض الفيديو</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- photoswipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+            title="Close (Esc)"></button>
+          <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
+            class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- photoswipe / end -->
+
+
 
   <!-- latest jquery-->
   <script src="../assets/js/jquery-3.5.1.min.js"></script>
@@ -467,6 +605,9 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
