@@ -56864,6 +56864,7 @@ table img {
     gap: 5px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
+    align-items: flex-end;
 }
 
 .details-auc-sec .left-sec .prices li {
@@ -56972,7 +56973,7 @@ table img {
 
 .aleayin-div {
     border-top: 1px solid #ddd;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-top: 15px;
 }
 
@@ -58574,6 +58575,73 @@ span.green-bg {
     color: #1f2a3c;
     opacity: 1 !important;
 }
+
+.start-auc {
+    text-align: center;
+}
+
+.start-auc p{
+    margin: 0;
+    font-size: 20px !important;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    color: #1587b0 !important;
+}
+
+
+.start-auc span{
+    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-weight: normal !important;
+}
+
+.start-auc span em{
+    font-size: 17px;
+    color: #b66048;
+}
+
+em.next {
+    background: #1587b0 !important;
+}
+
+em.finish {
+    background: #B05338 !important;
+}
+
+.details-auc-sec .left-sec .prices li img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* .details-auc-sec .awarded {
+    box-shadow: unset;
+    border-radius: 10px;
+}
+
+.details-auc-sec .awarded .bg-img {
+    background-position: center;
+    background-size: auto;
+}
+
+.details-auc-sec .awarded img {
+    height: 210px !important;
+}
+
+.details-auc-sec .awarded h4 {
+    font-size: 30px;
+}
+
+.details-auc-sec .awarded p {
+    font-size: 33px;
+}
+
+.details-auc-sec .awarded p em{
+    font-size: 22px;
+} */
 
 /* abdo resposive */
 

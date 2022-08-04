@@ -437,38 +437,259 @@
 
 
 
-    <!-- latest jquery-->
-    <script src="../assets/js/jquery-3.5.1.min.js"></script>
-    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../assets/js/scrollbar/custom.js"></script>
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="../assets/js/notify/index.js"></script>
-    <script src="../assets/js/echarts.js"></script>
-    <script src="../assets/js/datatable/datatables/jquery.datatables.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/jszip.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
-    <script src="../assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
-    <script src="../assets/js/select2/select2.full.min.js"></script>
-    <script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
-    <script src="../assets/js/moment.js"></script>
-    <script src="../assets/js/moment-hijri.min.js"></script>
-    <script src="../assets/js/bootstrap-hijri-datetimepicker.js"></script>
-    <script src="../assets/js/filepond/filepond.min.js"></script>
-    <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
-    <script src="../assets/js/filepond/filepond.jquery.js"></script>
-    <script src="../assets/js/steps/jquery-steps.min.js"></script>
-    <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
-    <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
-    <script src="../assets/js/counter/countdown.js"></script>
-    <script src="../assets/js/script.js"></script>
-</body>
+    <div class="modal fade modal-custom" id="details-auc" data-bs-backdrop="static">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
+                <div class="details-auc-sec">
+                    <div class="right-sec">
+                        <div class="name-auc">
+                            <h3>
+                                <div>
+                                    <i class="fa fa-gavel"></i>
+                                    مزاد البركة
+                                </div>
+                                <em class="finish">منتهي</em>
+                            </h3>
+                            <ul>
+                                <li><span>رقم المزاد :</span>14076242</li>
+                                <li><span>نوع المزاد :</span>الكتروني</li>
+                            </ul>
+                        </div>
+                        <img class="img-auc" src="../assets/images/auc/1.webp" alt="">
+                        <p class="desc">تعلن مؤسسة يوسف الحمياني تحت إشراف مركز الإسنـاد والتصفية "إنفاذ“ وبقرار من
+                            محكمة التنفيـذ عن بيع 4 عقارات بمواقـع مميـزة في محافظـة الدوادمي</p>
+                    </div>
+                    <div class="left-sec">
+                        <ul class="prices">
+                            <li>
+                                <p>أعلى قيمة للمزايدة</p>
+                                <span>1,700,000 <em>ر.س</em></span>
+                            </li>
+                            <li>
+                                <p>المبلغ الإجمالي</p>
+                                <span>2,003,875 <em>ر.س</em></span>
+                            </li>
+                            <li>
+                                <img src="../assets/images/win.svg" alt="">
+                                <p>تم الترسية بمبلغ</p>
+                                <span>2,003,875 <em>ر.س</em></span>
+                            </li>
+                        </ul>
+                        <div class="flex-l-r">
+                            <div class="right-box">
+                                <ul class="dts-auc-ul">
+                                    <li><img src="../assets/images/icons/tape-measure.svg" alt=""><span>سعر المتر م²
+                                            :</span>226.67 <em>رس</em></li>
+                                    <li><img src="../assets/images/icons/bidding.svg" alt=""><span>الحد الأدني للمزايدة
+                                            :</span>100,000<em>ر.س</em></li>
+                                    <li><img src="../assets/images/icons/cash.svg" alt=""><span>نسبة السعي
+                                            :</span>0,000<em>رس</em></li>
+                                    <li><img src="../assets/images/icons/house.svg" alt=""><span>نسبة الضرائب من السعي
+                                            :</span>0,000<em>ر.س</em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="left-box">
+                                <h3>آخر المزايدات</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <i class="icon-stats-up"></i>
+                                            <span>محمد 850</span>
+                                            <em>منذ 3 ساعات 35 دقائق</em>
+                                        </p>
+                                        <b>1,700,000 <em>ر.س</em></b>
+                                        <div class="Confetti">
+                                            <div class="Confetti_1"></div>
+                                            <div class="Confetti_2"></div>
+                                            <div class="Confetti_3"></div>
+                                            <div class="Confetti_4"></div>
+                                            <div class="Confetti_5"></div>
+                                            <div class="Confetti_6"></div>
+                                            <div class="Confetti_7"></div>
+                                            <div class="Confetti_8"></div>
+                                            <div class="Confetti_9"></div>
+                                            <div class="Confetti_10"></div>
+                                            <div class="Confetti_11"></div>
+                                            <div class="Confetti_12"></div>
+                                            <div class="Confetti_13"></div>
+                                            <div class="Confetti_14"></div>
+                                            <div class="Confetti_15"></div>
+                                            <div class="Confetti_16"></div>
+                                            <div class="Confetti_17"></div>
+                                            <div class="Confetti_18"></div>
+                                            <div class="Confetti_19"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="icon-stats-up"></i>
+                                            <span>خالد 784</span>
+                                            <em>منذ 4 ساعات 20 دقائق</em>
+                                        </p>
+                                        <b>1,600,000 <em>ر.س</em></b>
+                                        <div class="Confetti">
+                                            <div class="Confetti_1"></div>
+                                            <div class="Confetti_2"></div>
+                                            <div class="Confetti_3"></div>
+                                            <div class="Confetti_4"></div>
+                                            <div class="Confetti_5"></div>
+                                            <div class="Confetti_6"></div>
+                                            <div class="Confetti_7"></div>
+                                            <div class="Confetti_8"></div>
+                                            <div class="Confetti_9"></div>
+                                            <div class="Confetti_10"></div>
+                                            <div class="Confetti_11"></div>
+                                            <div class="Confetti_12"></div>
+                                            <div class="Confetti_13"></div>
+                                            <div class="Confetti_14"></div>
+                                            <div class="Confetti_15"></div>
+                                            <div class="Confetti_16"></div>
+                                            <div class="Confetti_17"></div>
+                                            <div class="Confetti_18"></div>
+                                            <div class="Confetti_19"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="icon-stats-up"></i>
+                                            <span>محمد 850</span>
+                                            <em>منذ 4 ساعات 50 دقائق</em>
+                                        </p>
+                                        <b>1,500,000 <em>ر.س</em></b>
+                                        <div class="Confetti">
+                                            <div class="Confetti_1"></div>
+                                            <div class="Confetti_2"></div>
+                                            <div class="Confetti_3"></div>
+                                            <div class="Confetti_4"></div>
+                                            <div class="Confetti_5"></div>
+                                            <div class="Confetti_6"></div>
+                                            <div class="Confetti_7"></div>
+                                            <div class="Confetti_8"></div>
+                                            <div class="Confetti_9"></div>
+                                            <div class="Confetti_10"></div>
+                                            <div class="Confetti_11"></div>
+                                            <div class="Confetti_12"></div>
+                                            <div class="Confetti_13"></div>
+                                            <div class="Confetti_14"></div>
+                                            <div class="Confetti_15"></div>
+                                            <div class="Confetti_16"></div>
+                                            <div class="Confetti_17"></div>
+                                            <div class="Confetti_18"></div>
+                                            <div class="Confetti_19"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="aleayin-div">
+                            <h3>
+                                <i class="icon-direction"></i>
+                                قطعة ارض في مدينة الأحساء علي طريق الأمير سعود بن جلوي
+                            </h3>
+                            <ul class="imgs-auc">
+                                    <li>
+                                        <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" data-width="1200" data-height="900" itemprop="">
+                                            <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/5.jpg" itemprop="thumbnail"
+                                                alt="Image description">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" data-width="1200" data-height="900" itemprop="">
+                                            <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/14.jpg" itemprop="thumbnail"
+                                                alt="Image description">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" data-width="1200" data-height="900" itemprop="">
+                                            <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/15.jpg" itemprop="thumbnail"
+                                                alt="Image description">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" data-width="1200" data-height="900" itemprop="">
+                                            <img src="https://admin.pixelstrap.com/zeta/assets/images/masonry/2.jpg" itemprop="thumbnail"
+                                                alt="Image description">
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</html>
+        <!-- photoswipe -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                            title="Close (Esc)"></button>
+                        <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
+                            class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+                            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- photoswipe / end -->
+    
+    
+    
+        <!-- latest jquery-->
+        <script src="../assets/js/jquery-3.5.1.min.js"></script>
+        <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/scrollbar/simplebar.js"></script>
+        <script src="../assets/js/scrollbar/custom.js"></script>
+        <script src="../assets/js/sidebar-menu.js"></script>
+        <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
+        <script src="../assets/js/notify/index.js"></script>
+        <script src="../assets/js/echarts.js"></script>
+        <script src="../assets/js/datatable/datatables/jquery.datatables.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/jszip.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
+        <script src="../assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
+        <script src="../assets/js/select2/select2.full.min.js"></script>
+        <script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
+        <script src="../assets/js/moment.js"></script>
+        <script src="../assets/js/moment-hijri.min.js"></script>
+        <script src="../assets/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="../assets/js/filepond/filepond.min.js"></script>
+        <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
+        <script src="../assets/js/filepond/filepond.jquery.js"></script>
+        <script src="../assets/js/steps/jquery-steps.min.js"></script>
+        <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+        <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+        <script src="../assets/js/counter/countdown.js"></script>
+        <script src="../assets/js/script.js"></script>
+    </body>
+    
+    </html>
