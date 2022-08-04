@@ -56864,7 +56864,6 @@ table img {
     gap: 5px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
-    align-items: flex-end;
 }
 
 .details-auc-sec .left-sec .prices li {
