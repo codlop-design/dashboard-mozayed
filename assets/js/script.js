@@ -527,6 +527,12 @@ $(".hijri-date-input").hijriDatePicker({
 
 }(jQuery));
 
+$(document).on('hidden.bs.modal', function (event) {
+  if ($('.modal:visible').length) {
+    $('body').addClass('modal-open');
+  }
+})
+
 // $('.tagsinput').tagsInput();
 
 var myCountdown = new countdown({

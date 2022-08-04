@@ -328,7 +328,7 @@
                   <div class="card-body">
                     <div class="media static-widget">
                       <div class="media-body">
-                        <h6 class="font-roboto">المزادات الحالية</h6>
+                        <h6 class="font-roboto">المزادات الحالية ( الكتروني )</h6>
                         <h4 class="mb-0 counter">9856</h4>
                       </div>
                       <img src="../assets/images/icons/stopwatch.svg" alt="">
@@ -343,7 +343,7 @@
                   <div class="card-body">
                     <div class="media static-widget">
                       <div class="media-body">
-                        <h6 class="font-roboto">المزادات القادمة</h6>
+                        <h6 class="font-roboto">المزادات القادمة ( الكتروني )</h6>
                         <h4 class="mb-0 counter">893</h4>
                       </div>
                       <img src="../assets/images/icons/hourglass.svg" alt="">
@@ -358,7 +358,52 @@
                   <div class="card-body">
                     <div class="media static-widget">
                       <div class="media-body">
-                        <h6 class="font-roboto">المزادات المنتهية</h6>
+                        <h6 class="font-roboto">المزادات المنتهية ( الكتروني )</h6>
+                        <h4 class="mb-0 counter">45631</h4>
+                      </div>
+                      <img src="../assets/images/icons/finish-line.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <a href="المزادات الحالية.html" class="card bg">
+                <div class="after-box bg-4">
+                  <div class="card-body">
+                    <div class="media static-widget">
+                      <div class="media-body">
+                        <h6 class="font-roboto">المزادات الحالية ( حضوري )</h6>
+                        <h4 class="mb-0 counter">9856</h4>
+                      </div>
+                      <img src="../assets/images/icons/stopwatch.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <a href="المزادات القادمة.html" class="card bg">
+                <div class="after-box bg-2">
+                  <div class="card-body">
+                    <div class="media static-widget">
+                      <div class="media-body">
+                        <h6 class="font-roboto">المزادات القادمة ( حضوري )</h6>
+                        <h4 class="mb-0 counter">893</h4>
+                      </div>
+                      <img src="../assets/images/icons/hourglass.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-sm-6">
+              <a href="المزادات المنتهية.html" class="card bg">
+                <div class="after-box bg-1">
+                  <div class="card-body">
+                    <div class="media static-widget">
+                      <div class="media-body">
+                        <h6 class="font-roboto">المزادات المنتهية ( حضوري )</h6>
                         <h4 class="mb-0 counter">45631</h4>
                       </div>
                       <img src="../assets/images/icons/finish-line.svg" alt="">
@@ -370,15 +415,30 @@
           </div>
           <div class="card">
             <div class="card-header border-bottom-0">
-              <h3>المزادات</h3>
+              <h3>المزاد الإلكتروني</h3>
             </div>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-6">
-                  <div id="chartone" class="chart"></div>
+                  <div id="chart1" class="chart"></div>
                 </div>
                 <div class="col-md-6">
+                  <div id="chart2" class="chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom-0">
+              <h3>المزاد الحضوري</h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
                   <div id="chart3" class="chart"></div>
+                </div>
+                <div class="col-md-6">
+                  <div id="chart4" class="chart"></div>
                 </div>
               </div>
             </div>
@@ -470,7 +530,7 @@
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
   <script>
-    var myChart = echarts.init(document.getElementById('chartone'));
+    var myChart = echarts.init(document.getElementById('chart1'));
     option = {
       tooltip: {
         trigger: 'axis',
@@ -532,7 +592,7 @@
     myChart.setOption(option);
   </script>
   <script>
-    var myChart = echarts.init(document.getElementById('chart3'));
+    var myChart = echarts.init(document.getElementById('chart2'));
     option = {
       tooltip: {
         trigger: 'axis',
@@ -594,6 +654,131 @@
 
     myChart.setOption(option);
   </script>
+    <script>
+      var myChart = echarts.init(document.getElementById('chart3'));
+      option = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          },
+          textStyle: {
+            fontFamily: 'Bahij_Plain'
+          }
+        },
+        grid: {
+          top: "9%",
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+          axisLabel: {
+            textStyle: {
+              fontSize: 14,
+              fontFamily: 'Bahij_Plain'
+            }
+          }
+        }],
+        yAxis: [{
+          type: 'value'
+        }],
+        series: [{
+            name: 'المزادات الحالية',
+            type: 'bar',
+            emphasis: {
+              focus: 'series'
+            },
+            data: [320, 332, 301, 334, 390],
+            color: '#0d9488'
+          },
+          {
+            name: 'المزادات القادمة',
+            type: 'bar',
+            emphasis: {
+              focus: 'series'
+            },
+            data: [120, 132, 101, 134, 90],
+            color: '#1587b0'
+          },
+          {
+            name: 'المزادات المنتهية',
+            type: 'bar',
+            emphasis: {
+              focus: 'series'
+            },
+            data: [220, 182, 191, 234, 290],
+            color: '#B05338'
+          }
+        ]
+      };
+      myChart.setOption(option);
+    </script>
+    <script>
+      var myChart = echarts.init(document.getElementById('chart4'));
+      option = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          },
+          textStyle: {
+            fontFamily: 'Bahij_Plain'
+          }
+        },
+        legend: {
+          textStyle: {
+            fontSize: 16,
+            fontFamily: 'Bahij_Plain'
+          }
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+          axisLabel: {
+            textStyle: {
+              fontSize: 15,
+              fontFamily: 'Bahij_Plain'
+            }
+          }
+        }],
+        yAxis: [{
+          type: 'value'
+        }],
+        series: [{
+            name: 'المزادات الحالية',
+            type: 'line',
+            smooth: true,
+            data: [320, 100, 301, 200, 50],
+            color: '#0d9488'
+          },
+          {
+            name: 'المزادات القادمة',
+            type: 'line',
+            smooth: true,
+            data: [120, 132, 101, 134, 90],
+            color: '#1587b0'
+          },
+          {
+            name: 'المزادات المنتهية',
+            type: 'line',
+            smooth: true,
+            data: [220, 182, 191, 234, 290],
+            color: '#B05338'
+          }
+        ]
+      };
+  
+      myChart.setOption(option);
+    </script>
 </body>
 
 </html>
