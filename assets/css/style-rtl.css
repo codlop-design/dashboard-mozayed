@@ -56877,11 +56877,13 @@ table img {
     font-size: 17px;
     color: #b66048;
     margin-bottom: 5px;
+    position: relative;
 }
 
 .details-auc-sec .left-sec .prices li span {
     font-weight: bold;
     font-size: 30px;
+    position: relative;
 }
 
 .details-auc-sec .left-sec .prices li span em {
@@ -56890,6 +56892,7 @@ table img {
 
 .details-auc-sec .left-sec .prices li:last-child {
     border: 0;
+    position: relative;
 }
 
 .details-auc-sec .left-sec .prices li:last-child p {
@@ -58613,8 +58616,11 @@ em.finish {
 }
 
 .details-auc-sec .left-sec .prices li img {
-    height: 80px;
-    margin-bottom: 10px;
+    height: 165px;
+    position: absolute;
+    left: -28px;
+    top: -28px;
+    opacity: .3;
 }
 
 /* .details-auc-sec .awarded {
