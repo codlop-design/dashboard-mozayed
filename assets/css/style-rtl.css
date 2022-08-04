@@ -49120,6 +49120,21 @@ html[dir="rtl"] .ecommerce-dashboard-section .support-sec.profile-greeting .supp
     box-shadow: rgb(255 255 255) 0px 0px 0px 2px, rgb(78 85 126) 0px 0px 0px 5px;
 }
 
+.bg-7 {
+    background: #5baf5e;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, #5baf5e 0px 0px 0px 5px;
+}
+
+.bg-8 {
+    background: #00bcd4;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, rgb(0 188 212) 0px 0px 0px 5px;
+}
+
+.bg-9 {
+    background: #cd537c;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, rgb(205 83 124) 0px 0px 0px 5px;
+}
+
 .profile-nav {
     margin-left: 0 !important;
     padding-left: 0 !important;
