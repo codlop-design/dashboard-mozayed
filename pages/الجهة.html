@@ -19,7 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -192,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -202,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -272,86 +276,86 @@
       <div class="page-body">
         <!-- Container-fluid starts-->
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-header">
-                    <h3>الجهة</h3>
-                    <div class="btns-header">
-                        <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
-                            <i class="fa fa-trash"></i>
-                            حذف الكل
-                        </a>
-                        <a href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" class="btn btn-primary btn-air-primary btn-icon">
-                            <i class="fa fa-plus"></i>
-                            اضافة جهة
-                        </a>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered datatable">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="inline-1" type="checkbox">
-                                            <label for="inline-1">تحديد الكل</label>
-                                        </div>
-                                    </th>
-                                    <th>الجهة</th>
-                                    <th>التحكم</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox checkbox-primary custom-check">
-                                            <input id="inline-2" type="checkbox">
-                                            <label for="inline-2"></label>
-                                        </div>
-                                    </td>
-                                    <td>خاص</td>
-                                    <td>
-                                        <div class="btns-table">
-                                          <a href="javascript:;" data-bs-toggle="modal"
-                                          data-bs-target="#exampleModal" class="btn btn-success">
-                                              <i class="fa fa-edit"></i>
-                                              تعديل
-                                          </a>
-                                            <a href="#" class="btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                                حذف
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                      <div class="checkbox checkbox-primary custom-check">
-                                          <input id="inline-2" type="checkbox">
-                                          <label for="inline-2"></label>
-                                      </div>
-                                  </td>
-                                  <td>حكومي</td>
-                                  <td>
-                                      <div class="btns-table">
-                                        <a href="javascript:;" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal" class="btn btn-success">
-                                            <i class="fa fa-edit"></i>
-                                            تعديل
-                                        </a>
-                                          <a href="#" class="btn btn-danger">
-                                              <i class="fa fa-trash"></i>
-                                              حذف
-                                          </a>
-                                      </div>
-                                  </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>الجهة</h3>
+              <div class="btns-header">
+                <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
+                  <i class="fa fa-trash"></i>
+                  حذف الكل
+                </a>
+                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  class="btn btn-primary btn-air-primary btn-icon">
+                  <i class="fa fa-plus"></i>
+                  اضافة جهة
+                </a>
+              </div>
             </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered datatable">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="checkbox checkbox-primary">
+                          <input id="inline-1" type="checkbox">
+                          <label for="inline-1">تحديد الكل</label>
+                        </div>
+                      </th>
+                      <th>الجهة</th>
+                      <th>التحكم</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="checkbox checkbox-primary custom-check">
+                          <input id="inline-2" type="checkbox">
+                          <label for="inline-2"></label>
+                        </div>
+                      </td>
+                      <td>خاص</td>
+                      <td>
+                        <div class="btns-table">
+                          <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="btn btn-success">
+                            <i class="fa fa-edit"></i>
+                            تعديل
+                          </a>
+                          <a href="#" class="btn btn-danger">
+                            <i class="fa fa-trash"></i>
+                            حذف
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox checkbox-primary custom-check">
+                          <input id="inline-2" type="checkbox">
+                          <label for="inline-2"></label>
+                        </div>
+                      </td>
+                      <td>حكومي</td>
+                      <td>
+                        <div class="btns-table">
+                          <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="btn btn-success">
+                            <i class="fa fa-edit"></i>
+                            تعديل
+                          </a>
+                          <a href="#" class="btn btn-danger">
+                            <i class="fa fa-trash"></i>
+                            حذف
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Container-fluid Ends-->
       </div>
@@ -425,6 +429,10 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>

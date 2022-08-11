@@ -19,7 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -192,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -202,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -277,67 +281,67 @@
               <h3>الاعدادات العامة</h3>
             </div>
             <div class="card-body pb-0">
-                <form class="form" method="post" action="">
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">اسم الموقع</label>
-                            <input class="form-control" type="text" placeholder="">
+              <form class="form" method="post" action="">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">اسم الموقع</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input class="form-control" type="email" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">العنوان</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">الهاتف</label>
+                    <input class="form-control" type="number" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">الفيس بوك</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">انستجرام</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">الخريطة</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">الشعار</label>
+                    <input type="file" class="my-pond" name="filepond" />
+                  </div>
+                  <div class="col-md-12">
+                    <div class="seo-div">
+                      <h4>بيانات السيو (SEO)</h4>
+                      <div class="row">
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">عنوان الميتا</label>
+                          <input class="form-control" type="text" placeholder="">
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">البريد الإلكتروني</label>
-                            <input class="form-control" type="email" placeholder="">
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">وصف الميتا</label>
+                          <input class="form-control" type="text" placeholder="">
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">العنوان</label>
-                            <input class="form-control" type="text" placeholder="">
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">الكلمات الدلالية</label>
+                          <input class="form-control" type="text" placeholder="">
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">الهاتف</label>
-                            <input class="form-control" type="number" placeholder="">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">الفيس بوك</label>
-                            <input class="form-control" type="text" placeholder="">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">انستجرام</label>
-                            <input class="form-control" type="text" placeholder="">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">الخريطة</label>
-                            <input class="form-control" type="text" placeholder="">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label class="form-label">الشعار</label>
-                             <input type="file" class="my-pond" name="filepond"/>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="seo-div">
-                                <h4>بيانات السيو (SEO)</h4>
-                                <div class="row">
-                                    <div class="col-md-4 form-group">
-                                        <label class="form-label">عنوان الميتا</label>
-                                        <input class="form-control" type="text" placeholder="">
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label class="form-label">وصف الميتا</label>
-                                        <input class="form-control" type="text" placeholder="">
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label class="form-label">الكلمات الدلالية</label>
-                                        <input class="form-control" type="text" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary btn-air-primary btn-icon" type="submit">
-                            <i class="fa fa-save"></i>
-                            حفظ
-                        </button>
-                    </div>
-                </form>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary btn-air-primary btn-icon" type="submit">
+                    <i class="fa fa-save"></i>
+                    حفظ
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -360,7 +364,6 @@
   <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/scrollbar/simplebar.js"></script>
   <script src="../assets/js/scrollbar/custom.js"></script>
-  <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/sidebar-menu.js"></script>
   <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
   <script src="../assets/js/notify/index.js"></script>
@@ -380,13 +383,15 @@
   <script src="../assets/js/moment.js"></script>
   <script src="../assets/js/moment-hijri.min.js"></script>
   <script src="../assets/js/bootstrap-hijri-datetimepicker.js"></script>
-<script src="../assets/js/filepond/filepond.min.js"></script>
-  <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
-  <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/filepond/filepond.min.js"></script>
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
 

@@ -19,9 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -194,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -204,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -624,7 +626,7 @@
           </div>
           <div class="auctions-transactions">
             <div class="balance">
-              <p>الرصيد الحالي : <span>100,000</span> <em>ر.س</em></p>
+              <p>الرصيد الحالي : <span>100,000</span><em>ر.س</em></p>
               <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="btn btn-success btn-icon">
                 <i class="icon-wallet"></i>
@@ -661,8 +663,7 @@
                           <td>
                             <span class="check-auc">
                               <img src="../assets/images/win.svg" alt="">
-                              تم الترسية بمبلغ <br>
-                              <b>1,400,000 <em>ر.س</em></b>
+                              تم الترسية
                             </span>
                           </td>
                         </tr>
@@ -776,7 +777,7 @@
   </div>
 
 
-  <div class="modal fade modal-custom" id="details-auc" data-bs-backdrop="static">
+  <div class="modal fade modal-custom modal-above" id="details-auc" data-bs-backdrop="static">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <i class="close-modal icon-close" type="button" data-bs-dismiss="modal"></i>
@@ -788,152 +789,15 @@
                   <i class="fa fa-gavel"></i>
                   مزاد البركة
                 </div>
-                <em>جاري</em>
+                <em class="finish">منتهي</em>
               </h3>
               <ul>
                 <li><span>رقم المزاد :</span>14076242</li>
                 <li><span>نوع المزاد :</span>الكتروني</li>
               </ul>
             </div>
-            <img class="img-auc" src="../assets/images/auc/1.webp" alt="">
             <p class="desc">تعلن مؤسسة يوسف الحمياني تحت إشراف مركز الإسنـاد والتصفية "إنفاذ“ وبقرار من
               محكمة التنفيـذ عن بيع 4 عقارات بمواقـع مميـزة في محافظـة الدوادمي</p>
-          </div>
-          <div class="left-sec">
-            <ul class="prices">
-              <li>
-                <p>أعلى قيمة للمزايدة</p>
-                <span>1,700,000 <em>ر.س</em></span>
-              </li>
-              <li>
-                <p>المبلغ الإجمالي</p>
-                <span>2,003,875 <em>ر.س</em></span>
-              </li>
-              <li>
-                <p>يبدأ المزاد بمبلغ</p>
-                <span>1,400,000 <em>ر.س</em></span>
-              </li>
-            </ul>
-            <div class="flex-l-r">
-              <div class="right-box">
-                <div class="count-sec-modal">
-                  <p>متبقي علي انتهاء المزاد</p>
-                  <div class="countdown-div count7" data-date="9-10-2022" data-time="12:00">
-                    <div class="day"><span class="num"></span><span class="word"></span>
-                    </div>
-                    <div class="hour"><span class="num"></span><span class="word"></span>
-                    </div>
-                    <div class="min"><span class="num"></span><span class="word"></span>
-                    </div>
-                    <div class="sec"><span class="num"></span><span class="word"></span>
-                    </div>
-                  </div>
-                </div>
-                <ul class="dts-auc-ul">
-                  <li><img src="../assets/images/icons/tape-measure.svg" alt=""><span>سعر المتر م²
-                      :</span>226.67 <em>رس</em></li>
-                  <li><img src="../assets/images/icons/bidding.svg" alt=""><span>الحد الأدني للمزايدة
-                      :</span>100,000<em>ر.س</em></li>
-                  <li><img src="../assets/images/icons/cash.svg" alt=""><span>نسبة السعي
-                      :</span>0,000<em>رس</em></li>
-                  <li><img src="../assets/images/icons/house.svg" alt=""><span>نسبة الضرائب من السعي
-                      :</span>0,000<em>ر.س</em>
-                  </li>
-                </ul>
-              </div>
-              <div class="left-box">
-                <h3>آخر المزايدات</h3>
-                <ul>
-                  <li>
-                    <p>
-                      <i class="icon-stats-up"></i>
-                      <span>محمد 850</span>
-                      <em>منذ 3 ساعات 35 دقائق</em>
-                    </p>
-                    <b>1,700,000 <em>ر.س</em></b>
-                    <div class="Confetti">
-                      <div class="Confetti_1"></div>
-                      <div class="Confetti_2"></div>
-                      <div class="Confetti_3"></div>
-                      <div class="Confetti_4"></div>
-                      <div class="Confetti_5"></div>
-                      <div class="Confetti_6"></div>
-                      <div class="Confetti_7"></div>
-                      <div class="Confetti_8"></div>
-                      <div class="Confetti_9"></div>
-                      <div class="Confetti_10"></div>
-                      <div class="Confetti_11"></div>
-                      <div class="Confetti_12"></div>
-                      <div class="Confetti_13"></div>
-                      <div class="Confetti_14"></div>
-                      <div class="Confetti_15"></div>
-                      <div class="Confetti_16"></div>
-                      <div class="Confetti_17"></div>
-                      <div class="Confetti_18"></div>
-                      <div class="Confetti_19"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <p>
-                      <i class="icon-stats-up"></i>
-                      <span>خالد 784</span>
-                      <em>منذ 4 ساعات 20 دقائق</em>
-                    </p>
-                    <b>1,600,000 <em>ر.س</em></b>
-                    <div class="Confetti">
-                      <div class="Confetti_1"></div>
-                      <div class="Confetti_2"></div>
-                      <div class="Confetti_3"></div>
-                      <div class="Confetti_4"></div>
-                      <div class="Confetti_5"></div>
-                      <div class="Confetti_6"></div>
-                      <div class="Confetti_7"></div>
-                      <div class="Confetti_8"></div>
-                      <div class="Confetti_9"></div>
-                      <div class="Confetti_10"></div>
-                      <div class="Confetti_11"></div>
-                      <div class="Confetti_12"></div>
-                      <div class="Confetti_13"></div>
-                      <div class="Confetti_14"></div>
-                      <div class="Confetti_15"></div>
-                      <div class="Confetti_16"></div>
-                      <div class="Confetti_17"></div>
-                      <div class="Confetti_18"></div>
-                      <div class="Confetti_19"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <p>
-                      <i class="icon-stats-up"></i>
-                      <span>محمد 850</span>
-                      <em>منذ 4 ساعات 50 دقائق</em>
-                    </p>
-                    <b>1,500,000 <em>ر.س</em></b>
-                    <div class="Confetti">
-                      <div class="Confetti_1"></div>
-                      <div class="Confetti_2"></div>
-                      <div class="Confetti_3"></div>
-                      <div class="Confetti_4"></div>
-                      <div class="Confetti_5"></div>
-                      <div class="Confetti_6"></div>
-                      <div class="Confetti_7"></div>
-                      <div class="Confetti_8"></div>
-                      <div class="Confetti_9"></div>
-                      <div class="Confetti_10"></div>
-                      <div class="Confetti_11"></div>
-                      <div class="Confetti_12"></div>
-                      <div class="Confetti_13"></div>
-                      <div class="Confetti_14"></div>
-                      <div class="Confetti_15"></div>
-                      <div class="Confetti_16"></div>
-                      <div class="Confetti_17"></div>
-                      <div class="Confetti_18"></div>
-                      <div class="Confetti_19"></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
             <div class="aleayin-div">
               <h3>
                 <i class="icon-direction"></i>
@@ -969,6 +833,186 @@
                   </a>
                 </li>
               </ul>
+            </div>
+            <div class="video-attachment">
+              <div class="attach-div">
+                <h3>
+                  <i class="icon-clip"></i>
+                  المرفقات
+                </h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/pdf.svg" alt="">
+                      <span>البروشور</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="video-div">
+                <a href="https://www.youtube.com/watch?v=FIVcTU5Bb4Y" class="video-btn popup-youtube">
+                  <i class="icon-control-play"></i>
+                </a>
+                <span>عرض الفيديو</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-sec">
+            <div class="right-box">
+              <div class="auc-end">
+                <img src="../assets/images/win.svg" alt="">
+                <p>تم ترسية المزاد</p>
+                <span>2,003,875<em>ر.س</em>
+                </span>
+              </div>
+              <ul class="dts-auc-ul">
+                <li><img src="../assets/images/icons/tape-measure.svg" alt=""><span>سعر المتر م²
+                    :</span>226.67 <em>رس</em></li>
+                <li><img src="../assets/images/icons/bidding.svg" alt=""><span>الحد الأدني للمزايدة
+                    :</span>100,000<em>ر.س</em></li>
+                <li><img src="../assets/images/icons/cash.svg" alt=""><span>نسبة السعي
+                    :</span>0,000<em>رس</em></li>
+                <li><img src="../assets/images/icons/house.svg" alt=""><span>نسبة الضرائب من السعي
+                    :</span>0,000<em>ر.س</em>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-l-r">
+              <ul class="prices">
+                <li class="highest-price">
+                  <p>أعلى قيمة للمزايدة</p>
+                  <span>1,700,000<em>ر.س</em></span>
+                </li>
+                <li>
+                  <p>المبلغ الإجمالي</p>
+                  <span>2,003,875<em>ر.س</em></span>
+                </li>
+              </ul>
+              <div class="left-box">
+                <h3>آخر المزايدات</h3>
+                <ul>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#details-modal">محمد
+                        850</span>
+                      <em>منذ 3 ساعات 35 دقائق</em>
+                    </p>
+                    <b>1,700,000<em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#details-modal">خالد
+                        784</span>
+                      <em>منذ 4 ساعات 20 دقائق</em>
+                    </p>
+                    <b>1,600,000<em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#details-modal">محمد
+                        850</span>
+                      <em>منذ 4 ساعات 50 دقائق</em>
+                    </p>
+                    <b>1,500,000<em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="icon-stats-up"></i>
+                      <span data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#details-modal">خالد
+                        784</span>
+                      <em>منذ 4 ساعات 20 دقائق</em>
+                    </p>
+                    <b>1,400,000<em>ر.س</em></b>
+                    <div class="Confetti">
+                      <div class="Confetti_1"></div>
+                      <div class="Confetti_2"></div>
+                      <div class="Confetti_3"></div>
+                      <div class="Confetti_4"></div>
+                      <div class="Confetti_5"></div>
+                      <div class="Confetti_6"></div>
+                      <div class="Confetti_7"></div>
+                      <div class="Confetti_8"></div>
+                      <div class="Confetti_9"></div>
+                      <div class="Confetti_10"></div>
+                      <div class="Confetti_11"></div>
+                      <div class="Confetti_12"></div>
+                      <div class="Confetti_13"></div>
+                      <div class="Confetti_14"></div>
+                      <div class="Confetti_15"></div>
+                      <div class="Confetti_16"></div>
+                      <div class="Confetti_17"></div>
+                      <div class="Confetti_18"></div>
+                      <div class="Confetti_19"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1041,8 +1085,10 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
   <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
   <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>

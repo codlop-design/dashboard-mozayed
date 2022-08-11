@@ -19,7 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -192,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -202,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -272,68 +276,67 @@
       <div class="page-body">
         <!-- Container-fluid starts-->
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-header">
-                    <h3>طلبات التواصل</h3>
-                    <div class="btns-header">
-                        <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
-                            <i class="fa fa-trash"></i>
-                            حذف الكل
-                        </a>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered datatable">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="checkbox checkbox-primary">
-                                            <input id="inline-1" type="checkbox">
-                                            <label for="inline-1">تحديد الكل</label>
-                                        </div>
-                                    </th>
-                                    <th>اسم الراسل</th>
-                                    <th>البريد الالكتروني</th>
-                                    <th>رقم الهاتف</th>
-                                    <th></th>
-                                    <th>التحكم</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox checkbox-primary custom-check">
-                                            <input id="inline-2" type="checkbox">
-                                            <label for="inline-2"></label>
-                                        </div>
-                                    </td>
-                                    <td>abdelrahman Mohamed</td>
-                                    <td>abdohantash9999@gmail.com</td>
-                                    <td>01550480127</td>
-                                    <td>
-                                      <div class="btns-table">
-                                        <a data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal" class="btn btn-info">
-                                            <i class="fa fa-eye"></i>
-                                            عرض الطلب
-                                        </a>
-                                    </div>
-                                    </td>
-                                    <td>
-                                        <div class="btns-table">
-                                            <a href="#" class="btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                                حذف
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>طلبات التواصل</h3>
+              <div class="btns-header">
+                <a href="#" class="btn btn-danger btn-air-danger btn-icon d-none">
+                  <i class="fa fa-trash"></i>
+                  حذف الكل
+                </a>
+              </div>
             </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered datatable">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="checkbox checkbox-primary">
+                          <input id="inline-1" type="checkbox">
+                          <label for="inline-1">تحديد الكل</label>
+                        </div>
+                      </th>
+                      <th>اسم الراسل</th>
+                      <th>البريد الالكتروني</th>
+                      <th>رقم الهاتف</th>
+                      <th></th>
+                      <th>التحكم</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="checkbox checkbox-primary custom-check">
+                          <input id="inline-2" type="checkbox">
+                          <label for="inline-2"></label>
+                        </div>
+                      </td>
+                      <td>abdelrahman Mohamed</td>
+                      <td>abdohantash9999@gmail.com</td>
+                      <td>01550480127</td>
+                      <td>
+                        <div class="btns-table">
+                          <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">
+                            <i class="fa fa-eye"></i>
+                            عرض الطلب
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btns-table">
+                          <a href="#" class="btn btn-danger">
+                            <i class="fa fa-trash"></i>
+                            حذف
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Container-fluid Ends-->
       </div>
@@ -363,8 +366,11 @@
           </div>
           <div class="msg-content">
             <h5>محتوي الرسالة</h5>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-              إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+              أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+              مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير
+              من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
           </div>
         </div>
         <div class="modal-footer">
@@ -405,6 +411,10 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>

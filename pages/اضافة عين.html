@@ -19,7 +19,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/filepond-plugin-image-preview.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/microtip.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/steps/jquery-steps.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
 </head>
 
@@ -192,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -202,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -279,207 +283,188 @@
             <div class="card-body">
               <div class="step-app" id="demo">
                 <form class="form" method="post" action="">
-                <ul class="step-steps">
-                  <li data-step-target="step1">
+                  <ul class="step-steps">
+                    <li data-step-target="step1">
                       <span>1</span>
                       <p>بيانات العين</p>
-                  </li>
-                  <li data-step-target="step2">
-                    <span>2</span>
-                    <p>خصائص العين</p>
-                  </li>
-                  <li data-step-target="step2">
-                    <span>3</span>
-                    <p>بيانات اضافية</p>
-                  </li>
-                  <li data-step-target="step2">
-                    <span>4</span>
-                    <p>المرفقات</p>
-                  </li>
-                </ul>
-                <div class="step-content">
-                  <div class="step-tab-panel" data-step="step1">
-                    <div class="row">
-                      <div class="col-md-4 form-group">
-                        <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#one">
-                          <span aria-label="اضافة نوع" data-microtip-position="top" role="tooltip"><i
-                              class="fa fa-plus"></i></span>
-                        </a>
-                        <label class="form-label">نوع العين</label>
-                        <select id="" class="select2-custom">
-                          <option value="">عقار</option>
-                          <option value="">أرض</option>
-                          <option value="">شقة</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">اسم العين</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#two">
-                          <span aria-label="اضافة مدينة" data-microtip-position="top" role="tooltip"><i
-                              class="fa fa-plus"></i></span>
-                        </a>
-                        <label class="form-label">المدينة</label>
-                        <select id="" class="select2-custom">
-                          <option value="">بريدة</option>
-                          <option value="">تست</option>
-                          <option value="">تست</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#three">
-                          <span aria-label="اضافة منطقة" data-microtip-position="top" role="tooltip"><i
-                              class="fa fa-plus"></i></span>
-                        </a>
-                        <label class="form-label">المنطقة</label>
-                        <select id="" class="select2-custom">
-                          <option value="">القصيم</option>
-                          <option value="">تست</option>
-                          <option value="">تست</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#four">
-                          <span aria-label="اضافة جهة" data-microtip-position="top" role="tooltip"><i
-                              class="fa fa-plus"></i></span>
-                        </a>
-                        <label class="form-label">الجهة</label>
-                        <select id="" class="select2-custom">
-                          <option value="">حكومي</option>
-                          <option value="">خاص</option>
-                        </select>
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">رقم القضية</label>
-                        <input class="form-control" type="number" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">اسم القضية</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">اسم المحكمة</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">اسم القاضي</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">السعر التقديري للعين (ر.س)</label>
-                        <input class="form-control" type="number" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">مبلغ التأمين (ر.س)</label>
-                        <input class="form-control" type="number" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">اسم دائرة التنفيذ</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">المساحة م²</label>
-                        <input class="form-control" type="text" placeholder="">
+                    </li>
+                    <li data-step-target="step2">
+                      <span>2</span>
+                      <p>خصائص العين</p>
+                    </li>
+                    <li data-step-target="step2">
+                      <span>3</span>
+                      <p>بيانات اضافية</p>
+                    </li>
+                    <li data-step-target="step2">
+                      <span>4</span>
+                      <p>المرفقات</p>
+                    </li>
+                  </ul>
+                  <div class="step-content">
+                    <div class="step-tab-panel" data-step="step1">
+                      <div class="row">
+                        <div class="col-md-4 form-group">
+                          <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#one">
+                            <span aria-label="اضافة نوع" data-microtip-position="top" role="tooltip"><i
+                                class="fa fa-plus"></i></span>
+                          </a>
+                          <label class="form-label">نوع العين</label>
+                          <select id="" class="select2-custom">
+                            <option value="">عقار</option>
+                            <option value="">أرض</option>
+                            <option value="">شقة</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">اسم العين</label>
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#four">
+                            <span aria-label="اضافة جهة" data-microtip-position="top" role="tooltip"><i
+                                class="fa fa-plus"></i></span>
+                          </a>
+                          <label class="form-label">الجهة</label>
+                          <select id="" class="select2-custom">
+                            <option value="">حكومي</option>
+                            <option value="">خاص</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#two">
+                            <span aria-label="اضافة مدينة" data-microtip-position="top" role="tooltip"><i
+                                class="fa fa-plus"></i></span>
+                          </a>
+                          <label class="form-label">المدينة</label>
+                          <select id="" class="select2-custom">
+                            <option value="">بريدة</option>
+                            <option value="">تست</option>
+                            <option value="">تست</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#three">
+                            <span aria-label="اضافة منطقة" data-microtip-position="top" role="tooltip"><i
+                                class="fa fa-plus"></i></span>
+                          </a>
+                          <label class="form-label">المنطقة</label>
+                          <select id="" class="select2-custom">
+                            <option value="">القصيم</option>
+                            <option value="">تست</option>
+                            <option value="">تست</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">المساحة م²</label>
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">السعر التقديري للعين (ر.س)</label>
+                          <input class="form-control" type="number" placeholder="">
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">مبلغ التأمين (ر.س)</label>
+                          <input class="form-control" type="number" placeholder="">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="step-tab-panel" data-step="step2">
-                    <div class="row">
-                      <div class="col-md-4 form-group">
-                        <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#five">
-                          <span aria-label="اضافة خاصية" data-microtip-position="top" role="tooltip"><i
-                              class="fa fa-plus"></i></span>
-                        </a>
-                        <label class="form-label">اسم الخاصية</label>
-                        <select id="" class="select2-custom">
-                          <option value="">عدد الغرف</option>
-                          <option value="">شمالا</option>
-                        </select>
+                    <div class="step-tab-panel" data-step="step2">
+                      <div class="row">
+                        <div class="col-md-4 form-group">
+                          <a href="javascript:;" class="show_sub_modal" data-bs-toggle="modal" data-bs-target="#five">
+                            <span aria-label="اضافة خاصية" data-microtip-position="top" role="tooltip"><i
+                                class="fa fa-plus"></i></span>
+                          </a>
+                          <label class="form-label">اسم الخاصية</label>
+                          <select id="" class="select2-custom">
+                            <option value="">عدد الغرف</option>
+                            <option value="">شمالا</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label class="form-label">القيمة</label>
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <button class="add-prop btn btn-dark btn-air-dark btn-icon" type="button">
+                            <i class="fa fa-plus"></i>
+                            اضافة
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-4 form-group">
-                        <label class="form-label">القيمة</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                      <div class="col-md-4 form-group">
-                        <button class="add-prop btn btn-dark btn-air-dark btn-icon" type="button">
-                          <i class="fa fa-plus"></i>
-                          اضافة
-                        </button>
+                      <div class="line-modal"></div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="table-responsive">
+                            <table class="table table-bordered datatable">
+                              <thead>
+                                <tr>
+                                  <th>اسم الخاصية</th>
+                                  <th>القيمة</th>
+                                  <th>التحكم</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>خاصية 1</td>
+                                  <td>قيمة 1</td>
+                                  <td>
+                                    <div class="btns-table">
+                                      <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#example2"
+                                        class="btn btn-success">
+                                        <i class="fa fa-edit"></i>
+                                        تعديل
+                                      </a>
+                                      <a href="#" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                        حذف
+                                      </a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="line-modal"></div>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="table-responsive">
-                          <table class="table table-bordered datatable">
-                            <thead>
-                              <tr>
-                                <th>اسم الخاصية</th>
-                                <th>القيمة</th>
-                                <th>التحكم</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>خاصية 1</td>
-                                <td>قيمة 1</td>
-                                <td>
-                                  <div class="btns-table">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#example2" class="btn btn-success">
-                                      <i class="fa fa-edit"></i>
-                                      تعديل
-                                    </a>
-                                    <a href="#" class="btn btn-danger">
-                                      <i class="fa fa-trash"></i>
-                                      حذف
-                                    </a>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                    <div class="step-tab-panel" data-step="step3">
+                      <div class="row">
+                        <div class="col-md-6 form-group">
+                          <label class="form-label">تفاصيل اضافية</label>
+                          <textarea class="editor" name=""></textarea>
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label class="form-label">موقع العين علي جوجل</label>
+                          <input class="form-control" type="text" placeholder="">
+                          <img class="mapimg" src="../assets/images/icons/map.svg" alt="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label class="form-label">لينك الفيديو</label>
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step-tab-panel" data-step="step4">
+                      <div class="row">
+                        <div class="col-md-6 form-group">
+                          <label class="form-label">الصور</label>
+                          <input type="file" class="my-pond" name="filepond" multiple />
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <label class="form-label">الملفات</label>
+                          <input type="file" class="my-pond" name="filepond" multiple />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="step-tab-panel" data-step="step3">
-                    <div class="row">
-                      <div class="col-md-6 form-group">
-                        <label class="form-label">تفاصيل اضافية</label>
-                        <textarea class="editor" name=""></textarea>
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <label class="form-label">موقع العين علي جوجل</label>
-                        <input class="form-control" type="text" placeholder="">
-                        <img class="mapimg" src="../assets/images/icons/map.svg" alt="">
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <label class="form-label">لينك الفيديو</label>
-                        <input class="form-control" type="text" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="step-tab-panel" data-step="step4">
-                    <div class="row">
-                      <div class="col-md-6 form-group">
-                        <label class="form-label">الصور</label>
-                        <input type="file" class="my-pond" name="filepond" multiple />
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <label class="form-label">الملفات</label>
-                        <input type="file" class="my-pond" name="filepond" multiple />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="step-footer">
+                  <div class="step-footer">
                     <button data-step-action="next" class="step-btn btn-next">التالي</button>
-                  <button data-step-action="prev" class="step-btn btn-prev">السابق</button>
-                  <button data-step-action="finish" class="step-btn btn-finish">اضافة</button>
-                </div>
-              </form>
+                    <button data-step-action="prev" class="step-btn btn-prev">السابق</button>
+                    <button data-step-action="finish" class="step-btn btn-finish">اضافة</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -721,6 +706,10 @@
   <script src="../assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
   <script src="../assets/js/filepond/filepond.jquery.js"></script>
   <script src="../assets/js/steps/jquery-steps.min.js"></script>
+  <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/counter/countdown.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>

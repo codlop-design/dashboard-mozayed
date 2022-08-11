@@ -196,9 +196,9 @@
                   <span>المزاد الحضوري</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - حضوري.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - حضوري.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - حضوري.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -206,9 +206,9 @@
                   <span>المزاد الإلكتروني</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="اضافة مزاد.html">إضافة مزاد</a></li>
-                  <li><a href="المزادات الحالية.html">المزادات الحالية</a></li>
-                  <li><a href="المزادات القادمة.html">المزادات القادمة</a></li>
-                  <li><a href="المزادات المنتهية.html">المزادات المنتهية</a></li>
+                  <li><a href="المزادات الحالية - الكتروني.html">المزادات الحالية</a></li>
+                  <li><a href="المزادات القادمة - الكتروني.html">المزادات القادمة</a></li>
+                  <li><a href="المزادات المنتهية - الكتروني.html">المزادات المنتهية</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="المزايدين.html">
@@ -460,40 +460,40 @@
   </div>
 
 
-      <!-- photoswipe -->
-      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+  <!-- photoswipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+            title="Close (Esc)"></button>
+          <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
+            class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
             </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button>
-                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
-                        class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
-                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div><!-- photoswipe / end -->
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- photoswipe / end -->
 
   <!-- latest jquery-->
   <script src="../assets/js/jquery-3.5.1.min.js"></script>
@@ -654,131 +654,131 @@
 
     myChart.setOption(option);
   </script>
-    <script>
-      var myChart = echarts.init(document.getElementById('chart3'));
-      option = {
-        tooltip: {
-          trigger: 'axis',
-          axisPointer: {
-            type: 'shadow'
-          },
+  <script>
+    var myChart = echarts.init(document.getElementById('chart3'));
+    option = {
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        },
+        textStyle: {
+          fontFamily: 'Bahij_Plain'
+        }
+      },
+      grid: {
+        top: "9%",
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: [{
+        data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+        axisLabel: {
           textStyle: {
+            fontSize: 14,
             fontFamily: 'Bahij_Plain'
           }
+        }
+      }],
+      yAxis: [{
+        type: 'value'
+      }],
+      series: [{
+          name: 'المزادات الحالية',
+          type: 'bar',
+          emphasis: {
+            focus: 'series'
+          },
+          data: [320, 332, 301, 334, 390],
+          color: '#5baf5e'
         },
-        grid: {
-          top: "9%",
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
-          containLabel: true
+        {
+          name: 'المزادات القادمة',
+          type: 'bar',
+          emphasis: {
+            focus: 'series'
+          },
+          data: [120, 132, 101, 134, 90],
+          color: '#2a728d'
         },
-        xAxis: [{
-          data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
-          axisLabel: {
-            textStyle: {
-              fontSize: 14,
-              fontFamily: 'Bahij_Plain'
-            }
-          }
-        }],
-        yAxis: [{
-          type: 'value'
-        }],
-        series: [{
-            name: 'المزادات الحالية',
-            type: 'bar',
-            emphasis: {
-              focus: 'series'
-            },
-            data: [320, 332, 301, 334, 390],
-            color: '#5baf5e'
+        {
+          name: 'المزادات المنتهية',
+          type: 'bar',
+          emphasis: {
+            focus: 'series'
           },
-          {
-            name: 'المزادات القادمة',
-            type: 'bar',
-            emphasis: {
-              focus: 'series'
-            },
-            data: [120, 132, 101, 134, 90],
-            color: '#2a728d'
-          },
-          {
-            name: 'المزادات المنتهية',
-            type: 'bar',
-            emphasis: {
-              focus: 'series'
-            },
-            data: [220, 182, 191, 234, 290],
-            color: '#cd537c'
-          }
-        ]
-      };
-      myChart.setOption(option);
-    </script>
-    <script>
-      var myChart = echarts.init(document.getElementById('chart4'));
-      option = {
-        tooltip: {
-          trigger: 'axis',
-          axisPointer: {
-            type: 'shadow'
-          },
+          data: [220, 182, 191, 234, 290],
+          color: '#cd537c'
+        }
+      ]
+    };
+    myChart.setOption(option);
+  </script>
+  <script>
+    var myChart = echarts.init(document.getElementById('chart4'));
+    option = {
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        },
+        textStyle: {
+          fontFamily: 'Bahij_Plain'
+        }
+      },
+      legend: {
+        textStyle: {
+          fontSize: 16,
+          fontFamily: 'Bahij_Plain'
+        }
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: [{
+        type: 'category',
+        data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+        axisLabel: {
           textStyle: {
+            fontSize: 15,
             fontFamily: 'Bahij_Plain'
           }
+        }
+      }],
+      yAxis: [{
+        type: 'value'
+      }],
+      series: [{
+          name: 'المزادات الحالية',
+          type: 'line',
+          smooth: true,
+          data: [320, 100, 301, 200, 50],
+          color: '#5baf5e'
         },
-        legend: {
-          textStyle: {
-            fontSize: 16,
-            fontFamily: 'Bahij_Plain'
-          }
+        {
+          name: 'المزادات القادمة',
+          type: 'line',
+          smooth: true,
+          data: [120, 132, 101, 134, 90],
+          color: '#2a728d'
         },
-        grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
-          containLabel: true
-        },
-        xAxis: [{
-          type: 'category',
-          data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
-          axisLabel: {
-            textStyle: {
-              fontSize: 15,
-              fontFamily: 'Bahij_Plain'
-            }
-          }
-        }],
-        yAxis: [{
-          type: 'value'
-        }],
-        series: [{
-            name: 'المزادات الحالية',
-            type: 'line',
-            smooth: true,
-            data: [320, 100, 301, 200, 50],
-            color: '#5baf5e'
-          },
-          {
-            name: 'المزادات القادمة',
-            type: 'line',
-            smooth: true,
-            data: [120, 132, 101, 134, 90],
-            color: '#2a728d'
-          },
-          {
-            name: 'المزادات المنتهية',
-            type: 'line',
-            smooth: true,
-            data: [220, 182, 191, 234, 290],
-            color: '#cd537c'
-          }
-        ]
-      };
-  
-      myChart.setOption(option);
-    </script>
+        {
+          name: 'المزادات المنتهية',
+          type: 'line',
+          smooth: true,
+          data: [220, 182, 191, 234, 290],
+          color: '#cd537c'
+        }
+      ]
+    };
+
+    myChart.setOption(option);
+  </script>
 </body>
 
 </html>
