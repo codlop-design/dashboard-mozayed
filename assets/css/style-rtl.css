@@ -58729,6 +58729,8 @@ em.finish {
     clip-path: polygon(110% -2%, 95% 50%, 110% 102%, -10% 102%, 5% 50%, -10% -2%);
     margin: 0 auto;
     width: auto !important;
+    border: 2px solid #009688 !important;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, #009688 0px 0px 0px 4px !important;
 }
 
 .details-auc-sec .auc-end {
