@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="pixelstrap">
-    <link rel="shortcut icon" href="../assets/images/logo-sm.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/logo.svg" type="image/x-icon">
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
@@ -30,8 +30,9 @@
 <body>
     <!-- Loader starts-->
     <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
+    <img src="../assets/images/logo.svg" alt="">
+    <div class="loader"></div>
+  </div>
     <div class="tap-top"><i class="fa fa-chevron-up"></i></div>
 
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -40,7 +41,7 @@
             <div class="header-wrapper row m-0">
                 <div class="header-logo-wrapper col-auto p-0">
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
-                                src="../assets/images/logo.png" alt=""></a>
+                                src="../assets/images/logo.svg" alt=""></a>
                     </div>
                     <div class="toggle-sidebar">
                         <div class="status_toggle sidebar-toggle d-flex">
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav-right col-10 col-sm-6 pull-right right-header p-0">
+                <div class="nav-right right-header p-0">
                     <ul class="nav-menus">
 
                         <li class="onhover-dropdown">
@@ -265,7 +266,7 @@
                                     <span>الإعدادات</span></a>
                                 <ul class="sidebar-submenu">
                                     <li><a href="الاعدادات العامة.html">الاعدادات العامة</a></li>
-                                    <li><a href="#">الملف الشخصي</a></li>
+                                    <li><a href="الملف الشخصي.html">الملف الشخصي</a></li>
                                 </ul>
                             </li>
                             <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:;">
@@ -378,7 +379,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 footer-copyright text-center">
-                            <p class="mb-0">جميع الحقوق محفوظة © 2022 لدى شركة Codlop</p>
+                            <p class="mb-0">جميع الحقوق محفوظة © 2022 لدى مؤسسة المزايد</p>
                         </div>
                     </div>
                 </div>
@@ -395,19 +396,19 @@
                 <div class="modal-body pb-0">
                     <form class="form" method="post" action="">
                         <div class="row">
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">اسم القاعة</label>
                                 <input class="form-control" type="text" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">تاريخ البداية</label>
                                 <input class="form-control hijri-date-input" type="text" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">تاريخ النهاية</label>
                                 <input class="form-control hijri-date-input" type="text" placeholder="">
                             </div>
-                            <div class="col-md-6 form-group">
+                            <div class="col-lg-6 col-md-12 form-group">
                                 <label class="form-label">المزايدين</label>
                                 <select id="" class="select2-custom" multiple>
                                     <option value="">abdo mohamed</option>
@@ -416,7 +417,7 @@
                                     <option value="">mahmoud</option>
                                 </select>
                             </div>
-                            <div class="col-md-6 form-group">
+                            <div class="col-lg-6 col-md-12 form-group">
                                 <label class="form-label">المزادات</label>
                                 <select id="" class="select2-custom" multiple>
                                     <option value="">مزاد البركة</option>
@@ -485,11 +486,11 @@
                                         <img src="../assets/images/user.svg" alt="">
                                         <img src="../assets/images/user.svg" alt="">
                                         <img src="../assets/images/user.svg" alt="">
-                                        <img src="../assets/images/user.svg" alt="">
-                                        <img src="../assets/images/user.svg" alt="">
-                                        <p data-bs-toggle="modal" data-bs-target="#all-bidders">عرض الكل</p>
-                                        <p class="add-bidder" data-bs-toggle="modal" data-bs-target="#add-bidder">اضافة
+                                        <div class="btns-bid">
+                                            <p data-bs-toggle="modal" data-bs-target="#all-bidders">عرض الكل</p>
+                                            <p class="add-bidder" data-bs-toggle="modal" data-bs-target="#add-bidder">اضافة
                                             مزايد</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -499,20 +500,20 @@
                 <div class="auc-box">
                     <div class="auctions-card">
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="img-div">
                                     <img src="../assets/images/auc/1.webp" alt="">
                                 </div>
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count1" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -520,39 +521,36 @@
                                     <div class="bg-img"></div>
                                     <img src="../assets/images/win.svg" alt="">
                                     <h4>تم ترسية المزاد</h4>
-                                    <p>1,700,000<em>ر.س</em></p>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
                         </div>
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="img-div">
                                     <img src="../assets/images/auc/2.webp" alt="">
                                 </div>
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count2" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -560,26 +558,23 @@
                                     <div class="bg-img"></div>
                                     <img src="../assets/images/win.svg" alt="">
                                     <h4>تم ترسية المزاد</h4>
-                                    <p>1,700,000<em>ر.س</em></p>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
                         </div>
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="c-card__ribbon">جاري</div>
                                 <div class="img-div">
                                     <img src="../assets/images/auc/3.webp" alt="">
@@ -587,34 +582,32 @@
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count3" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
                         </div>
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="c-card__ribbon">جاري</div>
                                 <div class="img-div">
                                     <img src="../assets/images/auc/4.webp" alt="">
@@ -622,34 +615,32 @@
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count4" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
                         </div>
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="c-card__ribbon">جاري</div>
                                 <div class="img-div">
                                     <img src="../assets/images/auc/5.webp" alt="">
@@ -657,34 +648,32 @@
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count5" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
                         </div>
                         <div class="product">
-                            <figure class="product-media">
+                            <figure class="product-media" data-bs-toggle="modal" data-bs-target="#details-auc">
                                 <div class="c-card__ribbon">جاري</div>
                                 <div class="img-div">
                                     <img src="../assets/images//auc/6.webp" alt="">
@@ -692,28 +681,26 @@
                                 <div class="count-sec">
                                     <p>متبقي علي انتهاء المزاد</p>
                                     <div class="countdown-div count6" data-date="9-10-2022" data-time="12:00">
-                                        <div class="day"><span class="num">66</span><span class="word"> يوم</span>
+                                        <div class="day"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="hour"><span class="num">00</span><span class="word"> ساعة</span>
+                                        <div class="hour"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="min"><span class="num">41</span><span class="word"> دقيقة</span>
+                                        <div class="min"><span class="num"></span><span class="word"></span>
                                         </div>
-                                        <div class="sec"><span class="num">36</span><span class="word"> ثانية</span>
+                                        <div class="sec"><span class="num"></span><span class="word"></span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                             <div class="product-details">
-                                <h3 class="product-name">
+                                <h3 class="product-name" data-bs-toggle="modal" data-bs-target="#details-auc">
                                     منشآة صناعية بالمدينة الصناعية بالدمام الثانية
                                 </h3>
                                 <div class="product-price"><span>السعر الافتتاحي</span> 1,400,000<em>ر.س</em>
                                 </div>
                                 <div class="btns-auc-dts">
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#details-auc"
-                                        class="details-btn">التفاصيل</a>
-                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-price-auc"
-                                        class="add-price-auc">اضافة اسعار
+                                    <a href="javascript:;" data-bs-toggle="modal"
+                                        data-bs-target="#add-price-auc" class="add-price-auc">اضافة اسعار
                                         المزايدين</a>
                                 </div>
                             </div>
@@ -821,13 +808,13 @@
                             </div>
                             <ul class="dts-auc-ul">
                                 <li><img src="../assets/images/icons/tape-measure.svg" alt=""><span>سعر المتر م²
-                                        :</span>226.67 <em>رس</em></li>
+                                        :</span><b>226,67<em>رس</em></b></li>
                                 <li><img src="../assets/images/icons/bidding.svg" alt=""><span>الحد الأدني للمزايدة
-                                        :</span>100,000<em>ر.س</em></li>
+                                        :</span><b>100,000<em>رس</em></b></li>
                                 <li><img src="../assets/images/icons/cash.svg" alt=""><span>نسبة السعي
-                                        :</span>0,000<em>رس</em></li>
+                                        :</span><b>0,000<em>رس</em></b></li>
                                 <li><img src="../assets/images/icons/house.svg" alt=""><span>نسبة الضرائب من السعي
-                                        :</span>0,000<em>ر.س</em>
+                                        :</span><b>0,000<em>رس</em></b></em>
                                 </li>
                             </ul>
                         </div>
@@ -1028,38 +1015,38 @@
                 <div class="modal-body pb-0">
                     <form class="form" method="post" action="">
                         <div class="row">
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">الاسم بالكامل</label>
                                 <input class="form-control" type="text" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">رقم الهوية</label>
                                 <input class="form-control" type="number" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">رقم الجوال</label>
                                 <input class="form-control" type="number" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">تاريخ الميلاد</label>
                                 <input class="form-control hijri-date-input" type="text" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">النوع</label>
                                 <select id="" class="select2-custom">
                                     <option value="">ذكر</option>
                                     <option value="">انثي</option>
                                 </select>
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">اسم المستخدم</label>
                                 <input class="form-control" type="text" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">كلمة المرور</label>
                                 <input class="form-control" type="password" placeholder="">
                             </div>
-                            <div class="col-md-4 form-group">
+                            <div class="col-lg-4 col-md-12 form-group">
                                 <label class="form-label">تأكيد كلمة المرور</label>
                                 <input class="form-control" type="password" placeholder="">
                             </div>
@@ -1112,7 +1099,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1121,7 +1108,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1130,7 +1117,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1139,7 +1126,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1148,7 +1135,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1157,7 +1144,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1166,7 +1153,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1175,7 +1162,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1184,7 +1171,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1193,7 +1180,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1202,7 +1189,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>
@@ -1211,7 +1198,7 @@
                                 <img src="../assets/images/user.svg" alt="">
                                 <h3>
                                     Abdo Mohamed Ali
-                                    <span>الرصيد الحالي <b>1,000,000</b><em>ر.س</em></span>
+                                    <span>الرصيد الحالي <b>1,000,000<em>ر.س</em></b></span>
                                 </h3>
                             </div>
                         </li>

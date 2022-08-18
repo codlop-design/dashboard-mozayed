@@ -128,8 +128,10 @@
   });
 })(jQuery);
 
-$(".loader-wrapper").fadeOut("slow", function () {
-  $(this).remove();
+$(window).on('load', function(){
+  $(".loader-wrapper").fadeOut("fast", function () {
+    $(this).remove();
+  });
 });
 
 $(window).on("scroll", function () {
@@ -411,15 +413,12 @@ $(".color-selector ul li ").on("click", function (e) {
 });
 
   $(document).ready(function () {
-    var table = $('.table.datatable').DataTable({
+    $('.table.datatable').DataTable({
         lengthChange: true,
-        buttons: [ 'excel', 'pdf', 'print'],
         language: {
           "url": "http://cdn.datatables.net/plug-ins/1.12.1/i18n/ar.json"
       }
     });
-    table.buttons().container()
-        .appendTo('#DataTables_Table_0_wrapper .col-md-6:eq(0)');
 });
 
 $('#photo').on('change',function (e){
