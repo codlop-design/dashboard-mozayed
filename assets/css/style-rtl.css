@@ -51646,11 +51646,6 @@ table .switch-showcase .media {
         width: calc(100% - 0px) !important
     }
 
-    .page-wrapper.compact-wrapper .page-header {
-        margin-right: 0 !important;
-        width: calc(100% - 0px) !important
-    }
-
 
     .page-wrapper.compact-wrapper .page-header .header-wrapper .header-logo-wrapper {
         display: -webkit-box;
@@ -59068,6 +59063,16 @@ em.finish {
         overflow: hidden;
     }
 
+    .page-wrapper .page-header {
+        position: fixed;
+        background: #164e63;
+        margin: 0;
+    }
+
+    .page-wrapper .page-body-wrapper {
+        margin: 75px 10px 10px;
+    }
+
 
     .bidder-profile {
         flex-wrap: wrap;
@@ -59195,7 +59200,7 @@ em.finish {
     }
 
     .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
-        min-height: calc(100vh - 120px);
+        min-height: calc(100vh - 123px);
     }
 
     .modal-open .modal {
@@ -59288,6 +59293,10 @@ em.finish {
 }
 
 @media (max-width:768px) {
+
+    .page-wrapper .page-body-wrapper {
+        margin: 62px 10px 10px;
+    }
 
     .details-auc-sec .auc-end img {
         height: 100px;
