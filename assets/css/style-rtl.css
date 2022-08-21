@@ -55733,34 +55733,6 @@ table .switch-showcase .media {
     .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div li.text-center {
         padding: 0
     }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media .notification-right span {
-        font-size: 10px !important
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media .notification-right a i {
-        font-size: 10px !important
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media .notification-img {
-        padding: 8px
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media .notification-img img {
-        width: 30px
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media-body {
-        margin-right: 50px !important
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media-body h5 {
-        font-size: 13px !important
-    }
-
-    .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.notification-dropdown.active li .media-body p {
-        font-size: 10px !important
-    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
@@ -59171,6 +59143,7 @@ em.finish {
         top: 0;
         bottom: 0;
         overflow: auto;
+        height: 100vh;
     }
 
     .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links {
@@ -59876,6 +59849,27 @@ em.finish {
         padding: 15px;
     }
 
+    .select2-container .select2-selection--multiple {
+        min-height: 32px;
+    }
+
+    .selection .select2-selection .select2-search__field {
+        height: 26px;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        padding: 2px 4px !important;
+        font-size: 13px;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+        padding: 2px 3px;
+    }
+
+    .seo-div h4 {
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width:630px) {
@@ -59987,7 +59981,7 @@ em.finish {
     }
 
     .modal-dialog {
-        margin: 10px;
+        margin: 20px 10px 10px;
         max-width: 100% !important;
     }
 
@@ -60273,6 +60267,17 @@ em.finish {
         align-items: flex-start;
     }
 
+    .modal-open .modal::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .modal-open .modal::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+    }
+
+
+
 }
 
 @media (max-width:450px) {
@@ -60341,8 +60346,12 @@ em.finish {
         display: none;
     }
 
+    .footer-copyright {
+        padding: 0 !important;
+    }
+
     .footer p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
@@ -60631,6 +60640,47 @@ em.finish {
 
     .hall-dts ul li .mozayed-img p {
         margin-right: 0;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right .notification-dropdown ul {
+        height: 220px;
+    margin-bottom: 30px;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right .notification-dropdown li .media .media-body a {
+        font-size: 12px;
+    }
+
+    .view-all {
+        padding: 4px;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li {
+        padding: 7px 0 5px !important;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li a {
+        font-size: 14px;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li:last-child {
+        padding-top: 5px !important;
+        padding-bottom: 7px !important;
+    }
+
+    .datepicker tbody tr > td.day.today:before {
+        display: none;
+    }
+
+    .seo-div h4 {
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    .seo-div {
+        margin-top: 25px;
+        padding: 15px 15px 5px;
     }
     
 }
