@@ -479,7 +479,7 @@ $(document).ready(function () {
   if ((contentwidth) < '992') {
     $('.sidebar-toggle').on('click', function () {
       $('.bg-overlay-side').addClass('active');
-      $('body').addClass('overhiddin');
+      $('body').addClass('overhidden');
     });
 
     $('.bg-overlay-side').on('click', function () {
