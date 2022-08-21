@@ -60333,7 +60333,17 @@ em.finish {
         border: 2px solid transparent;
     }
 
+    .details-auc-sec {
+        padding: 25px 10px 10px;
+    }
 
+    .all-bidders {
+        padding: 25px 10px 10px;
+    }
+
+    .bidder-profile {
+        padding: 10px;
+    }
 
 }
 
