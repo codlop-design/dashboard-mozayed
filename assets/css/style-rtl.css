@@ -28071,6 +28071,7 @@ ul.pro-services li:nth-child(n+2) {
 @media only screen and (max-width: 1660px) {
     .table-responsive {
         overflow-x: auto;
+        overflow-y: hidden;
     }
 }
 
@@ -60386,7 +60387,7 @@ em.finish {
     }
 
     .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
-        min-height: calc(100vh - 106px);
+        min-height: calc(100vh - 108px);
     }
 
     .step-app .step-steps li p {
@@ -60712,6 +60713,11 @@ em.finish {
     .seo-div {
         margin-top: 25px;
         padding: 15px 15px 5px;
+    }
+
+    .btns-table .btn {
+        padding: 0px 5px;
+        font-size: 10px;
     }
     
 }
