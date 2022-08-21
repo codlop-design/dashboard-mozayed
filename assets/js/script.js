@@ -479,17 +479,17 @@ $(".hijri-date-input").hijriDatePicker({
   $(document).ready(function () {
     var contentwidth = jQuery(window).width();
     if ((contentwidth) < '992') {
-
+      $('.sidebar-toggle').on('click',function() {
+        $('.bg-overlay-side').addClass('active');
+        $('body').addClass('overhidden');
+      });
+    
+      $('.bg-overlay-side').on('click',function() {
+        $(this).removeClass('active');
+        $('.sidebar-wrapper').addClass('close_icon');
+        $('body').removeClass('overhidden');
+      });
   }
-
-  $('.sidebar-toggle').on('click',function() {
-    $('.bg-overlay-side').addClass('active');
-  });
-
-  $('.bg-overlay-side').on('click',function() {
-    $(this).removeClass('active');
-    $('.sidebar-wrapper').addClass('close_icon');
-  });
 
     });
 

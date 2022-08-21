@@ -59063,6 +59063,10 @@ em.finish {
         opacity: 1;
     }
 
+    body.overhidden {
+        overflow: hidden;
+    }
+
 
     .bidder-profile {
         flex-wrap: wrap;
