@@ -475,6 +475,24 @@ $(".hijri-date-input").hijriDatePicker({
       }
   });
 
+
+  $(document).ready(function () {
+    var contentwidth = jQuery(window).width();
+    if ((contentwidth) < '992') {
+
+  }
+
+  $('.sidebar-toggle').on('click',function() {
+    $('.bg-overlay-side').addClass('active');
+  });
+
+  $('.bg-overlay-side').on('click',function() {
+    $(this).removeClass('active');
+    $('.sidebar-wrapper').addClass('close_icon');
+  });
+
+    });
+
   $(function() {
     $('.tabs-nav a').click(function() {
       // Check for active
@@ -495,6 +513,7 @@ $(".hijri-date-input").hijriDatePicker({
       preloader: false,
       fixedContentPos: false
     });
+
   });
 
 
